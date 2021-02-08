@@ -102,6 +102,20 @@
 									require "dashboard.php";
 								} else if($page == "menu_utama"){
 									require "menu_utama.php";
+								} else if($page == "tbl_pendidikan"){
+									require "tbl_pendidikan.php";
+								} else if($page == "tbl_penelitian"){
+									require "tbl_penelitian.php";
+								} else if($page == "tbl_pengabdian_masyarakat"){
+									require "tbl_pen_mas.php";
+								} else if($page == "tbl_seleksi_mhs"){
+									require "tbl_sel_mhs.php";
+								} else if($page == "tbl_mhs_asing"){
+									require "tbl_mhs_asing.php";
+								} else if($page == "tbl_dosen_tetap"){
+									require "tbl_dst.php";
+								} else if($page == "tbl_dosen_pembimbing"){
+									require "tbl_dospem.php";
 								} else {
 									echo "Tes";
 								}
@@ -154,13 +168,13 @@
 									<span class="drawer-menu-text"> Daftar Tabel</span>
 								</a>
 								<ul class="collapse " id="uiComponentsMenu">
-									<li class="drawer-menu-item "><a href="">Pendidikan</a></li>
-									<li class="drawer-menu-item "><a href="">Penelitian</a></li>
-									<li class="drawer-menu-item "><a href="">Pengabdian Masyarakat</a></li>
-									<li class="drawer-menu-item "><a href="">Seleksi Mahasiswa</a></li>
-									<li class="drawer-menu-item "><a href="">Mahasiswa Asing</a></li>
-									<li class="drawer-menu-item "><a href="">Dosen Tetap</a></li>
-									<li class="drawer-menu-item "><a href="">Dosen Pembimbing TA</a></li>
+									<li class="drawer-menu-item "><a href="?p=tbl_pendidikan">Pendidikan</a></li>
+									<li class="drawer-menu-item "><a href="?p=tbl_penelitian">Penelitian</a></li>
+									<li class="drawer-menu-item "><a href="?p=tbl_pengabdian_masyarakat">Pengabdian Masyarakat</a></li>
+									<li class="drawer-menu-item "><a href="?p=tbl_seleksi_mhs">Seleksi Mahasiswa</a></li>
+									<li class="drawer-menu-item "><a href="?p=tbl_mhs_asing">Mahasiswa Asing</a></li>
+									<li class="drawer-menu-item "><a href="?p=tbl_dosen_tetap">Dosen Tetap</a></li>
+									<li class="drawer-menu-item "><a href="?p=tbl_dosen_pembimbing">Dosen Pembimbing TA</a></li>
 									<li class="drawer-menu-item "><a href="">DLL</a></li>
 								</ul>
 							</li>
