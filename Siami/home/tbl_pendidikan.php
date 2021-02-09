@@ -13,7 +13,7 @@
 <?php
 include "../config/database.php";
 
-$query = mysqli_query($db,"SELECT * FROM tbl_kerjasama_pendidikan WHERE id_akred_prodi = 1");
+$query = mysqli_query($db,"SELECT * FROM tbl_kerjasama_pendidikan WHERE id_akred_prodi = $id");
 
 
 ?>
@@ -45,6 +45,8 @@ $query = mysqli_query($db,"SELECT * FROM tbl_kerjasama_pendidikan WHERE id_akred
 							<th style="width: 87.2px;">waktu & durasi</th>
 							<th style="width: 63.2px;">Bukti Kerjasama </th>
 							<th style="width: 63.2px;">Tahun Berakhir </th>
+							<th style="width: 40.2px;">Edit </th>
+							<th style="width: 40.2px;">Delete </th>
 						</tr>
 					</thead>
 					<tbody>
@@ -61,6 +63,8 @@ $query = mysqli_query($db,"SELECT * FROM tbl_kerjasama_pendidikan WHERE id_akred
 								<td><?php echo $data["waktu_durasi"];?></td>
 								<td><?php echo $data["bukti_kerjasama"];?></td>
 								<td><?php echo $data["tahun_berakhir"];?></td>
+								<td>Edit</td>
+								<td>Delete</td>
 							</tr>
 
 						<?php } ?>
