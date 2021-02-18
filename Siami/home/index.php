@@ -101,7 +101,7 @@ $query = mysqli_query($db,"SELECT * FROM tbl_akred_prodi");
 				</div> -->
 				<div class="mdk-header-layout__content top-navbar mdk-header-layout__content--scrollable h-100">
 					<div class="container-fluid">
-						<?php
+						<?php 
 
 							if(isset($_GET['p'])){
 								$page = $_GET['p'];
@@ -175,7 +175,7 @@ $query = mysqli_query($db,"SELECT * FROM tbl_akred_prodi");
 									<span class="drawer-menu-text"> Daftar Tabel</span>
 								</a>
 								<ul class="collapse " id="uiComponentsMenu">
-									<li class="drawer-menu-item "><a href="?p=tbl_pendidikan&id=<?php echo $id['id_akred_prodi']; ?>">Pendidikan</a></li>
+									<li class="drawer-menu-item "><a href="?p=tbl_pendidikan">Pendidikan</a></li>
 									<li class="drawer-menu-item "><a href="?p=tbl_penelitian">Penelitian</a></li>
 									<li class="drawer-menu-item "><a href="?p=tbl_pengabdian_masyarakat">Pengabdian Masyarakat</a></li>
 									<li class="drawer-menu-item "><a href="?p=tbl_seleksi_mhs">Seleksi Mahasiswa</a></li>

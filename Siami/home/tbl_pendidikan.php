@@ -13,7 +13,7 @@
 <?php
 include "../config/database.php";
 
-$query = mysqli_query($db,"SELECT * FROM tbl_kerjasama_pendidikan WHERE id_akred_prodi = $id");
+$query = mysqli_query($db,"SELECT * FROM tbl_kerjasama_pendidikan");
 
 
 ?>
@@ -56,15 +56,15 @@ $query = mysqli_query($db,"SELECT * FROM tbl_kerjasama_pendidikan WHERE id_akred
         					?>
 
 							<tr role="row" class="odd">
-								<td><?php echo $data["lembaga_mitra"];?></td>
-								<td><?php echo $data["tingkat"];?></td>
-								<td><?php echo $data["judul_keg_kerjasama"];?></td>
-								<td><?php echo $data["manfaat"];?></td>
-								<td><?php echo $data["waktu_durasi"];?></td>
-								<td><?php echo $data["bukti_kerjasama"];?></td>
-								<td><?php echo $data["tahun_berakhir"];?></td>
-								<td>Edit</td>
-								<td>Delete</td>
+								<td><font size="2%;"><?php echo $data["lembaga_mitra"];?></font></td>
+								<td><font size="2%;"><?php echo $data["tingkat"];?></font></td>
+								<td><font size="2%;"><?php echo $data["judul_keg_kerjasama"];?></font></td>
+								<td><font size="2%;"><?php echo $data["manfaat"];?></font></td>
+								<td><font size="2%;"><?php echo $data["waktu_durasi"];?></font></td>
+								<td><font size="2%;"><?php echo $data["bukti_kerjasama"];?></font></td>
+								<td><font size="2%;"><?php echo $data["tahun_berakhir"];?></font></td>
+								<td><font size="2%;">Edit</td>
+								<td><font size="2%;">Delete</td>
 							</tr>
 
 						<?php } ?>
