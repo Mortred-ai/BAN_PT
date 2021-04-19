@@ -4,7 +4,7 @@
 <?php
 include "../config/database.php";
 
-$query = mysqli_query($db,"SELECT * FROM tbl_akred_prodi");
+$query = mysqli_query($db, "SELECT * FROM tbl_akred_prodi");
 
 ?>
 
@@ -48,9 +48,8 @@ $query = mysqli_query($db,"SELECT * FROM tbl_akred_prodi");
 									<li class="nav-item nav-divider">
 									<li class="nav-item">
 										<a href="#" class="nav-link dropdown-toggle dropdown-clear-caret" data-toggle="sidebar" data-target="#user-drawer">
-										Frontted
-										<img src="https://pbs.twimg.com/profile_images/928893978266697728/3enwe0fO_400x400.jpg" class="img-fluid rounded-circle ml-1" width="35"
-											alt="">
+											Frontted
+											<img src="https://pbs.twimg.com/profile_images/928893978266697728/3enwe0fO_400x400.jpg" class="img-fluid rounded-circle ml-1" width="35" alt="">
 										</a>
 									</li>
 								</ul>
@@ -101,34 +100,36 @@ $query = mysqli_query($db,"SELECT * FROM tbl_akred_prodi");
 				</div> -->
 				<div class="mdk-header-layout__content top-navbar mdk-header-layout__content--scrollable h-100">
 					<div class="container-fluid">
-						<?php 
+						<?php
 
-							if(isset($_GET['p'])){
-								$page = $_GET['p'];
-								if($page == 'dashboard'){
-									require "dashboard.php";
-								} else if($page == "menu_utama"){
-									require "menu_utama.php";
-								} else if($page == "tbl_pendidikan"){
-									require "tbl_pendidikan.php";
-								} else if($page == "tbl_penelitian"){
-									require "tbl_penelitian.php";
-								} else if($page == "tbl_pengabdian_masyarakat"){
-									require "tbl_pen_mas.php";
-								} else if($page == "tbl_seleksi_mhs"){
-									require "tbl_sel_mhs.php";
-								} else if($page == "tbl_mhs_asing"){
-									require "tbl_mhs_asing.php";
-								} else if($page == "tbl_dosen_tetap"){
-									require "tbl_dst.php";
-								} else if($page == "tbl_dosen_pembimbing"){
-									require "tbl_dospem.php";
-								} else {
-									echo "Tes";
-								}
-							} else {
+						if (isset($_GET['p'])) {
+							$page = $_GET['p'];
+							if ($page == 'dashboard') {
 								require "dashboard.php";
+							} else if ($page == "menu_utama") {
+								require "menu_utama.php";
+							} else if ($page == "tbl_pendidikan") {
+								require "tbl_pendidikan.php";
+							} else if ($page == "tbl_penelitian") {
+								require "tbl_penelitian.php";
+							} else if ($page == "tbl_pengabdian_masyarakat") {
+								require "tbl_pen_mas.php";
+							} else if ($page == "tbl_seleksi_mhs") {
+								require "tbl_sel_mhs.php";
+							} else if ($page == "tbl_mhs_asing") {
+								require "tbl_mhs_asing.php";
+							} else if ($page == "tbl_dosen_tetap") {
+								require "tbl_dst.php";
+							} else if ($page == "tbl_dosen_pembimbing") {
+								require "tbl_dospem.php";
+							} else if ($page == "tbl_ewmp_dosen_tetap") {
+								require "tbl_ewmp.php";
+							} else {
+								echo "Tes";
 							}
+						} else {
+							require "dashboard.php";
+						}
 						?>
 					</div>
 				</div>
@@ -182,7 +183,7 @@ $query = mysqli_query($db,"SELECT * FROM tbl_akred_prodi");
 									<li class="drawer-menu-item "><a href="?p=tbl_mhs_asing">Mahasiswa Asing</a></li>
 									<li class="drawer-menu-item "><a href="?p=tbl_dosen_tetap">Dosen Tetap</a></li>
 									<li class="drawer-menu-item "><a href="?p=tbl_dosen_pembimbing">Dosen Pembimbing TA</a></li>
-									<li class="drawer-menu-item "><a href="">DLL</a></li>
+									<li class="drawer-menu-item "><a href="?p=tbl_ewmp_dosen_tetap">EWMP Dosen Tetap</a></li>
 								</ul>
 							</li>
 						</ul>
