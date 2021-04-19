@@ -124,6 +124,10 @@ $query = mysqli_query($db, "SELECT * FROM tbl_akred_prodi");
 								require "tbl_dospem.php";
 							} else if ($page == "tbl_ewmp_dosen_tetap") {
 								require "tbl_ewmp.php";
+							} else if ($page == "tbl_dosen_tidak_tetap") {
+								require "tbl_dtt.php";
+							} else if ($page == "tbl_pengakuan_rekognisi_dtps") {
+								require "tbl_pengakuan_dtps.php";
 							} else {
 								echo "Tes";
 							}
@@ -184,6 +188,8 @@ $query = mysqli_query($db, "SELECT * FROM tbl_akred_prodi");
 									<li class="drawer-menu-item "><a href="?p=tbl_dosen_tetap">Dosen Tetap</a></li>
 									<li class="drawer-menu-item "><a href="?p=tbl_dosen_pembimbing">Dosen Pembimbing TA</a></li>
 									<li class="drawer-menu-item "><a href="?p=tbl_ewmp_dosen_tetap">EWMP Dosen Tetap</a></li>
+									<li class="drawer-menu-item "><a href="?p=tbl_dosen_tidak_tetap">Dosen Tetap</a></li>
+									<li class="drawer-menu-item "><a href="?p=tbl_pengakuan_rekognisi_dtps">Pengakuan/Rekognisi DTPS</a></li>
 								</ul>
 							</li>
 						</ul>
