@@ -128,6 +128,18 @@ $query = mysqli_query($db, "SELECT * FROM tbl_akred_prodi");
 								require "tbl_dtt.php";
 							} else if ($page == "tbl_pengakuan_rekognisi_dtps") {
 								require "tbl_pengakuan_dtps.php";
+							} else if ($page == "tbl_penelitian_dtps") {
+								require "tbl_pen_dtps.php";
+							} else if ($page == "tbl_pkm_dtps") {
+								require "tbl_pkm_dtps.php";
+							} else if ($page == "tbl_publikasi_ilmiah_dtps") {
+								require "tbl_publ_dtps.php";
+							} else if ($page == "tbl_karya_ilmiah_dtps") {
+								require "tbl_karya_dtps.php";
+							} else if ($page == "tbl_hki_paten") {
+								require "tbl_hki_paten.php";
+							} else if ($page == "tbl_hki_hakcipta") {
+								require "tbl_hki_hakcipta.php";
 							} else {
 								echo "Tes";
 							}
@@ -190,6 +202,12 @@ $query = mysqli_query($db, "SELECT * FROM tbl_akred_prodi");
 									<li class="drawer-menu-item "><a href="?p=tbl_ewmp_dosen_tetap">EWMP Dosen Tetap</a></li>
 									<li class="drawer-menu-item "><a href="?p=tbl_dosen_tidak_tetap">Dosen Tetap</a></li>
 									<li class="drawer-menu-item "><a href="?p=tbl_pengakuan_rekognisi_dtps">Pengakuan/Rekognisi DTPS</a></li>
+									<li class="drawer-menu-item "><a href="?p=tbl_penelitian_dtps">Penelitian DTPS</a></li>
+									<li class="drawer-menu-item "><a href="?p=tbl_pkm_dtps">PKM DTPS</a></li>
+									<li class="drawer-menu-item "><a href="?p=tbl_publikasi_ilmiah_dtps">Publikasi Ilmiah DTPS</a></li>
+									<li class="drawer-menu-item "><a href="?p=tbl_karya_ilmiah_dtps">Karya Ilmiah DTPS</a></li>
+									<li class="drawer-menu-item "><a href="?p=tbl_hki_paten">HKI (Paten, Paten Sederhana)</a></li>
+									<li class="drawer-menu-item "><a href="?p=tbl_hki_hakcipta">HKI (Hak Cipta, Desain, Dll)</a></li>
 								</ul>
 							</li>
 						</ul>

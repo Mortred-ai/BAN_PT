@@ -13,7 +13,7 @@
     <div class="card-body">
         <div class="row">
             <div class="col-sm-10 mt-2">
-                <h2>Data Tabel Pengakuan / Rekognisi DTPS</h2>
+                <h2>Data Tabel Luaran Penelitian/PkM Lainnya oleh DTPS</h2>
             </div>
             <div class="col-sm-2 mt-2">
                 <button class="btn btn-primary">Tambah Data</button>
@@ -25,7 +25,7 @@
 <?php
 include "../config/database.php";
 
-$query = mysqli_query($db, "SELECT * FROM  tbl_rekognisi_dtps");
+$query = mysqli_query($db, "SELECT * FROM  tbl_pen_pkm_mhs_paten");
 ?>
 
 <div class="card">
@@ -48,11 +48,9 @@ $query = mysqli_query($db, "SELECT * FROM  tbl_rekognisi_dtps");
                     <table style="width: 100%;" id="example" class="table table-hover table-striped table-bordered dataTable dtr-inline" role="grid" aria-describedby="example_info">
                         <thead>
                             <tr role="row">
-                                <th style="width: 118.2px;">Nama Dosen </th>
-                                <th style="width: 82.2px;">Bidang Keahlian </th>
-                                <th style="width: 40.2px;">Rekognisi dan Bukti Pendukung </th>
-                                <th style="width: 87.2px;">Tingkat</th>
-                                <th style="width: 63.2px;">Tahun </th>
+                                <th style="width: 118.2px;">Luaran Penelitian dan PkM </th>
+                                <th style="width: 82.2px;">Tahun </th>
+                                <th style="width: 63.2px;">Keterangan</th>
                                 <th style="width: 40.2px;">Edit </th>
                                 <th style="width: 40.2px;">Delete </th>
                             </tr>
@@ -66,27 +64,17 @@ $query = mysqli_query($db, "SELECT * FROM  tbl_rekognisi_dtps");
                                 <tr role="row" class="odd">
                                     <td>
                                         <font size="2%;">
-                                            <p class="text-break"><?php echo $data["nama_dosen"]; ?></p>
-                                        </font>
-                                    </td>
-                                    <td>
-                                        <font size="2%;">
-                                            <p class="text-break"><?php echo $data["bid_keahlian"]; ?></p>
-                                        </font>
-                                    </td>
-                                    <td>
-                                        <font size="2%;">
-                                            <p class="text-break"><?php echo $data["rekognisi_bukti"]; ?></p>
-                                        </font>
-                                    </td>
-                                    <td>
-                                        <font size="2%;">
-                                            <p class="text-break"><?php echo $data["id_tingkat"]; ?></p>
+                                            <p class="text-break"><?php echo $data["luaran_pen_pkm"]; ?></p>
                                         </font>
                                     </td>
                                     <td>
                                         <font size="2%;">
                                             <p class="text-break"><?php echo $data["tahun"]; ?></p>
+                                        </font>
+                                    </td>
+                                    <td>
+                                        <font size="2%;">
+                                            <p class="text-break"><?php echo $data["keterangan"]; ?></p>
                                         </font>
                                     </td>
                                     <td>

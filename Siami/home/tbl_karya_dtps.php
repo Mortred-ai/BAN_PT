@@ -13,7 +13,7 @@
     <div class="card-body">
         <div class="row">
             <div class="col-sm-10 mt-2">
-                <h2>Data Tabel Pengakuan / Rekognisi DTPS</h2>
+                <h2>Data Tabel Karya Ilmiah DTPS yang Disitasi</h2>
             </div>
             <div class="col-sm-2 mt-2">
                 <button class="btn btn-primary">Tambah Data</button>
@@ -25,7 +25,7 @@
 <?php
 include "../config/database.php";
 
-$query = mysqli_query($db, "SELECT * FROM  tbl_rekognisi_dtps");
+$query = mysqli_query($db, "SELECT * FROM  tbl_ki_dtps_sitasi");
 ?>
 
 <div class="card">
@@ -49,10 +49,8 @@ $query = mysqli_query($db, "SELECT * FROM  tbl_rekognisi_dtps");
                         <thead>
                             <tr role="row">
                                 <th style="width: 118.2px;">Nama Dosen </th>
-                                <th style="width: 82.2px;">Bidang Keahlian </th>
-                                <th style="width: 40.2px;">Rekognisi dan Bukti Pendukung </th>
-                                <th style="width: 87.2px;">Tingkat</th>
-                                <th style="width: 63.2px;">Tahun </th>
+                                <th style="width: 82.2px;">Judul Artikel yang Disitasi </th>
+                                <th style="width: 63.2px;">Jumlah Sitasi</th>
                                 <th style="width: 40.2px;">Edit </th>
                                 <th style="width: 40.2px;">Delete </th>
                             </tr>
@@ -71,22 +69,12 @@ $query = mysqli_query($db, "SELECT * FROM  tbl_rekognisi_dtps");
                                     </td>
                                     <td>
                                         <font size="2%;">
-                                            <p class="text-break"><?php echo $data["bid_keahlian"]; ?></p>
+                                            <p class="text-break"><?php echo $data["judul_artikel"]; ?></p>
                                         </font>
                                     </td>
                                     <td>
                                         <font size="2%;">
-                                            <p class="text-break"><?php echo $data["rekognisi_bukti"]; ?></p>
-                                        </font>
-                                    </td>
-                                    <td>
-                                        <font size="2%;">
-                                            <p class="text-break"><?php echo $data["id_tingkat"]; ?></p>
-                                        </font>
-                                    </td>
-                                    <td>
-                                        <font size="2%;">
-                                            <p class="text-break"><?php echo $data["tahun"]; ?></p>
+                                            <p class="text-break"><?php echo $data["jumlah_sitasi"]; ?></p>
                                         </font>
                                     </td>
                                     <td>
