@@ -2,7 +2,7 @@
      <div class="card-body">
          <div class="row">
              <div class="col-sm-10 mt-2">
-                 <h2>Data Tabel Teknologi Tepat Guna, Produk, Karya Seni, Rekayasa Sosial
+                 <h2>Data Tabel Buku Ber-ISBN, Book Chapter
                  </h2>
              </div>
              <div class="col-sm-2 mt-2">
@@ -15,7 +15,7 @@
  <?php
     include "../config/database.php";
 
-    $query = mysqli_query($db, "SELECT * FROM  tbl_pen_pkm_dtps_teknocepat");
+    $query = mysqli_query($db, "SELECT * FROM  tbl_pen_pkm_mhs_isbn");
     ?>
 
  <div class="card">

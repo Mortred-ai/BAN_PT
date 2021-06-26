@@ -2,7 +2,7 @@
      <div class="card-body">
          <div class="row">
              <div class="col-sm-10 mt-2">
-                 <h2>Data Tabel Teknologi Tepat Guna, Produk, Karya Seni, Rekayasa Sosial
+                 <h2>Data Tabel Penggunaan Dana
                  </h2>
              </div>
              <div class="col-sm-2 mt-2">
@@ -15,7 +15,7 @@
  <?php
     include "../config/database.php";
 
-    $query = mysqli_query($db, "SELECT * FROM  tbl_pen_pkm_dtps_teknocepat");
+    $query = mysqli_query($db, "SELECT * FROM  tbl_penggunaan_dana");
     ?>
 
  <div class="card">
@@ -38,7 +38,7 @@
                      <table style="width: 100%;" id="example" class="table table-hover table-striped table-bordered dataTable dtr-inline" role="grid" aria-describedby="example_info">
                          <thead>
                              <tr role="row">
-                                 <th style="width: 118.2px;">Luaran Penelitian dan PkM </th>
+                                 <th style="width: 118.2px;">Jenis Penggunaan </th>
                                  <th style="width: 82.2px;">Tahun </th>
                                  <th style="width: 63.2px;">Keterangan</th>
                                  <th style="width: 40.2px;">Edit </th>

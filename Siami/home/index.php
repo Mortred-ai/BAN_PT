@@ -140,7 +140,16 @@ $query = mysqli_query($db, "SELECT * FROM tbl_akred_prodi");
 								require "tbl_hki_hakcipta.php";
 							} else if ($page == "tbl_ttg_dll") {
 								require "tbl_ttg.php";
-							} else {
+							} else if ($page == "tbl_isbn_book") {
+								require "tbl_isbn.php";
+							} else if ($page == "tbl_penggunaan_dana") {
+								require "tbl_penggunaan_dana.php";
+							}
+
+
+
+							// else
+							else {
 								echo "Tes";
 							}
 						} else {
@@ -206,9 +215,11 @@ $query = mysqli_query($db, "SELECT * FROM tbl_akred_prodi");
 									<li class="drawer-menu-item "><a href="?p=tbl_pkm_dtps">PKM DTPS</a></li>
 									<li class="drawer-menu-item "><a href="?p=tbl_publikasi_ilmiah_dtps">Publikasi Ilmiah DTPS</a></li>
 									<li class="drawer-menu-item "><a href="?p=tbl_karya_ilmiah_dtps">Karya Ilmiah DTPS</a></li>
-									<li class="drawer-menu-item "><a href="?p=tbl_hki_paten">HKI (Paten, Paten Sederhana)</a></li>
+									<li class="drawer-menu-item "><a href="?p=tbl_hki_paten">HKI (Paten,PatenSederhana)</a></li>
 									<li class="drawer-menu-item "><a href="?p=tbl_hki_hakcipta">HKI (Hak Cipta, Desain, Dll)</a></li>
 									<li class="drawer-menu-item "><a href="?p=tbl_ttg_dll">Teknologi Tepat Guna, Dll</a></li>
+									<li class="drawer-menu-item "><a href="?p=tbl_isbn_book">Buku Ber-ISBN, Book Chapter</a></li>
+									<li class="drawer-menu-item "><a href="?p=tbl_penggunaan_dana">Penggunaan dana</a></li>
 								</ul>
 							</li>
 						</ul>
