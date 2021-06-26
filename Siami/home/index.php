@@ -12,12 +12,10 @@ $query = mysqli_query($db, "SELECT * FROM tbl_akred_prodi");
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Hero</title>
-
+	<title>BAN-PT</title>
 
 	<link type="text/css" href="assets/css/vendor-morris.css" rel="stylesheet">
 	<link type="text/css" href="assets/css/vendor-bootstrap-datepicker.css" rel="stylesheet">
-
 
 	<!-- App CSS -->
 	<link type="text/css" href="assets/css/app.css" rel="stylesheet">
@@ -140,6 +138,8 @@ $query = mysqli_query($db, "SELECT * FROM tbl_akred_prodi");
 								require "tbl_hki_paten.php";
 							} else if ($page == "tbl_hki_hakcipta") {
 								require "tbl_hki_hakcipta.php";
+							} else if ($page == "tbl_ttg_dll") {
+								require "tbl_ttg.php";
 							} else {
 								echo "Tes";
 							}
@@ -208,6 +208,7 @@ $query = mysqli_query($db, "SELECT * FROM tbl_akred_prodi");
 									<li class="drawer-menu-item "><a href="?p=tbl_karya_ilmiah_dtps">Karya Ilmiah DTPS</a></li>
 									<li class="drawer-menu-item "><a href="?p=tbl_hki_paten">HKI (Paten, Paten Sederhana)</a></li>
 									<li class="drawer-menu-item "><a href="?p=tbl_hki_hakcipta">HKI (Hak Cipta, Desain, Dll)</a></li>
+									<li class="drawer-menu-item "><a href="?p=tbl_ttg_dll">Teknologi Tepat Guna, Dll</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -246,8 +247,6 @@ $query = mysqli_query($db, "SELECT * FROM tbl_akred_prodi");
 	</div>
 	<!-- // END drawer-layout -->
 
-
-
 	<!-- jQuery -->
 	<script src="assets/vendor/jquery.min.js"></script>
 
@@ -283,7 +282,6 @@ $query = mysqli_query($db, "SELECT * FROM tbl_akred_prodi");
 			// Self Initialize DOM Factory Components
 			domFactory.handler.autoInit()
 
-
 			// Connect button(s) to drawer(s)
 			var sidebarToggle = document.querySelectorAll('[data-toggle="sidebar"]')
 
@@ -301,7 +299,6 @@ $query = mysqli_query($db, "SELECT * FROM tbl_akred_prodi");
 			})
 		})()
 	</script>
-
 
 	<script src="assets/vendor/morris.min.js"></script>
 	<script src="assets/vendor/raphael.min.js"></script>
