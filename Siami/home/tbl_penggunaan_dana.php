@@ -39,8 +39,14 @@
                          <thead>
                              <tr role="row">
                                  <th style="width: 118.2px;">Jenis Penggunaan </th>
-                                 <th style="width: 82.2px;">Tahun </th>
-                                 <th style="width: 63.2px;">Keterangan</th>
+                                 <th style="width: 82.2px;">TS2 </th>
+                                 <th style="width: 63.2px;">TS1</th>
+                                 <th style="width: 63.2px;">TS</th>
+                                 <th style="width: 63.2px;">Average</th>
+                                 <th style="width: 82.2px;">TS2 </th>
+                                 <th style="width: 63.2px;">TS1</th>
+                                 <th style="width: 63.2px;">TS</th>
+                                 <th style="width: 63.2px;">Average</th>
                                  <th style="width: 40.2px;">Edit </th>
                                  <th style="width: 40.2px;">Delete </th>
                              </tr>
@@ -54,17 +60,47 @@
                                  <tr role="row" class="odd">
                                      <td>
                                          <font size="2%;">
-                                             <p class="text-break"><?php echo $data["luaran_pen_pkm"]; ?></p>
+                                             <p class="text-break"><?php echo $data["jenis_penggunaan"]; ?></p>
                                          </font>
                                      </td>
                                      <td>
                                          <font size="2%;">
-                                             <p class="text-break"><?php echo $data["tahun"]; ?></p>
+                                             <p class="text-break"><?php echo $data["ts2_unit_pengelola_prodi"]; ?></p>
                                          </font>
                                      </td>
                                      <td>
                                          <font size="2%;">
-                                             <p class="text-break"><?php echo $data["keterangan"]; ?></p>
+                                             <p class="text-break"><?php echo $data["ts1_unit_pengelola_prodi"]; ?></p>
+                                         </font>
+                                     </td>
+                                     <td>
+                                         <font size="2%;">
+                                             <p class="text-break"><?php echo $data["ts_unit_pengelola_prodi"]; ?></p>
+                                         </font>
+                                     </td>
+                                     <td>
+                                         <font size="2%;">
+                                             <p class="text-break"><?php echo $data["avg_unit_pengelola_prodi"]; ?></p>
+                                         </font>
+                                     </td>
+                                     <td>
+                                         <font size="2%;">
+                                             <p class="text-break"><?php echo $data["ts2_prodi"]; ?></p>
+                                         </font>
+                                     </td>
+                                     <td>
+                                         <font size="2%;">
+                                             <p class="text-break"><?php echo $data["ts1_prodi"]; ?></p>
+                                         </font>
+                                     </td>
+                                     <td>
+                                         <font size="2%;">
+                                             <p class="text-break"><?php echo $data["ts_prodi"]; ?></p>
+                                         </font>
+                                     </td>
+                                     <td>
+                                         <font size="2%;">
+                                             <p class="text-break"><?php echo $data["avg_prodi"]; ?></p>
                                          </font>
                                      </td>
                                      <td>

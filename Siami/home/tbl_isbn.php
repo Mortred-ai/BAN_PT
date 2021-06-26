@@ -15,7 +15,7 @@
  <?php
     include "../config/database.php";
 
-    $query = mysqli_query($db, "SELECT * FROM  tbl_pen_pkm_mhs_isbn");
+    $query = mysqli_query($db, "SELECT * FROM  tbl_pen_pkm_dtps_isbn");
     ?>
 
  <div class="card">

@@ -218,7 +218,7 @@ $query = mysqli_query($db, "SELECT * FROM tbl_akred_prodi");
 									<li class="drawer-menu-item "><a href="?p=tbl_hki_paten">HKI (Paten,PatenSederhana)</a></li>
 									<li class="drawer-menu-item "><a href="?p=tbl_hki_hakcipta">HKI (Hak Cipta, Desain, Dll)</a></li>
 									<li class="drawer-menu-item "><a href="?p=tbl_ttg_dll">Teknologi Tepat Guna, Dll</a></li>
-									<li class="drawer-menu-item "><a href="?p=tbl_isbn_book">Buku Ber-ISBN, Book Chapter</a></li>
+									<li class="drawer-menu-item "><a href="?p=tbl_isbn_book">Buku Ber-ISBN</a></li>
 									<li class="drawer-menu-item "><a href="?p=tbl_penggunaan_dana">Penggunaan dana</a></li>
 								</ul>
 							</li>
