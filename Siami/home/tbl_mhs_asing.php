@@ -58,42 +58,42 @@ $query = mysqli_query($db, "SELECT * FROM tbl_mhs_asing ");
                             while ($data = mysqli_fetch_array($query)) {
                             ?>
 
-                                <tr role="row" class="odd">
+                                <tr role="row" class="odd" style="font-size: 14px;">
                                     <td>
-                                        <font size="2%;"><?php echo $data["prodi"]; ?></font>
+                                        <?php echo $data["prodi"]; ?>
                                     </td>
                                     <td>
-                                        <font size="2%;"><?php echo $data["ts2_mhs_aktif"]; ?></font>
+                                        <?php echo $data["ts2_mhs_aktif"]; ?>
                                     </td>
                                     <td>
-                                        <font size="2%;"><?php echo $data["ts1_mhs_aktif"]; ?></font>
+                                        <?php echo $data["ts1_mhs_aktif"]; ?>
                                     </td>
                                     <td>
-                                        <font size="2%;"><?php echo $data["ts_mhs_aktif"]; ?></font>
+                                        <?php echo $data["ts_mhs_aktif"]; ?>
                                     </td>
                                     <td>
-                                        <font size="2%;"><?php echo $data["ts2_mhs_ft"]; ?></font>
+                                        <?php echo $data["ts2_mhs_ft"]; ?>
                                     </td>
                                     <td>
-                                        <font size="2%;"><?php echo $data["ts1_mhs_ft"]; ?></font>
+                                        <?php echo $data["ts1_mhs_ft"]; ?>
                                     </td>
                                     <td>
-                                        <font size="2%;"><?php echo $data["ts_mhs_ft"]; ?></font>
+                                        <?php echo $data["ts_mhs_ft"]; ?>
                                     </td>
                                     <td>
-                                        <font size="2%;"><?php echo $data["ts2_mhs_pt"]; ?></font>
+                                        <?php echo $data["ts2_mhs_pt"]; ?>
                                     </td>
                                     <td>
-                                        <font size="2%;"><?php echo $data["ts1_mhs_pt"]; ?></font>
+                                        <?php echo $data["ts1_mhs_pt"]; ?>
                                     </td>
                                     <td>
-                                        <font size="2%;"><?php echo $data["ts_mhs_pt"]; ?></font>
+                                        <?php echo $data["ts_mhs_pt"]; ?>
                                     </td>
                                     <td>
-                                        <font size="2%;">Edit
+                                        Edit
                                     </td>
                                     <td>
-                                        <font size="2%;">Delete
+                                        Delete
                                     </td>
                                 </tr>
 

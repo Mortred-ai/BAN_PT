@@ -55,33 +55,33 @@ $query = mysqli_query($db, "SELECT * FROM  tbl_kerjasama_peng_masy");
                             while ($data = mysqli_fetch_array($query)) {
                             ?>
 
-                                <tr role="row" class="odd">
+                                <tr role="row" class="odd" style="font-size: 14px;">
                                     <td>
-                                        <font size="2%;"><?php echo $data["lembaga_mitra"]; ?></font>
+                                        <?php echo $data["lembaga_mitra"]; ?>
                                     </td>
                                     <td>
-                                        <font size="2%;"><?php echo $data["tingkat"]; ?></font>
+                                        <?php echo $data["tingkat"]; ?>
                                     </td>
                                     <td>
-                                        <font size="2%;"><?php echo $data["judul_keg_kerjasama"]; ?></font>
+                                        <?php echo $data["judul_keg_kerjasama"]; ?>
                                     </td>
                                     <td>
-                                        <font size="2%;"><?php echo $data["manfaat"]; ?></font>
+                                        <?php echo $data["manfaat"]; ?>
                                     </td>
                                     <td>
-                                        <font size="2%;"><?php echo $data["waktu_durasi"]; ?></font>
+                                        <?php echo $data["waktu_durasi"]; ?>
                                     </td>
                                     <td>
-                                        <font size="2%;"><?php echo $data["bukti_kerjasama"]; ?></font>
+                                        <?php echo $data["bukti_kerjasama"]; ?>
                                     </td>
                                     <td>
-                                        <font size="2%;"><?php echo $data["tahun_berakhir"]; ?></font>
+                                        <?php echo $data["tahun_berakhir"]; ?>
                                     </td>
                                     <td>
-                                        <font size="2%;">Edit
+                                        Edit
                                     </td>
                                     <td>
-                                        <font size="2%;">Delete
+                                        Delete
                                     </td>
                                 </tr>
 

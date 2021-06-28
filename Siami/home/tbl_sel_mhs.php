@@ -56,36 +56,36 @@ $query = mysqli_query($db, "SELECT * FROM tbl_seleksi_maba");
                             while ($data = mysqli_fetch_array($query)) {
                             ?>
 
-                                <tr role="row" class="odd">
+                                <tr role="row" class="odd" style="font-size: 14px;">
                                     <td>
-                                        <font size="2%;"><?php echo $data["id_thajaran"]; ?></font>
+                                        <?php echo $data["id_thajaran"]; ?>
                                     </td>
                                     <td>
-                                        <font size="2%;"><?php echo $data["daya_tampung"]; ?></font>
+                                        <?php echo $data["daya_tampung"]; ?>
                                     </td>
                                     <td>
-                                        <font size="2%;"><?php echo $data["cama_pendaftar"]; ?></font>
+                                        <?php echo $data["cama_pendaftar"]; ?>
                                     </td>
                                     <td>
-                                        <font size="2%;"><?php echo $data["cama_lolos"]; ?></font>
+                                        <?php echo $data["cama_lolos"]; ?>
                                     </td>
                                     <td>
-                                        <font size="2%;"><?php echo $data["maba_reg"]; ?></font>
+                                        <?php echo $data["maba_reg"]; ?>
                                     </td>
                                     <td>
-                                        <font size="2%;"><?php echo $data["maba_transfer"]; ?></font>
+                                        <?php echo $data["maba_transfer"]; ?>
                                     </td>
                                     <td>
-                                        <font size="2%;"><?php echo $data["mhs_reg"]; ?></font>
+                                        <?php echo $data["mhs_reg"]; ?>
                                     </td>
                                     <td>
-                                        <font size="2%;"><?php echo $data["mhs_transfer"]; ?></font>
+                                        <?php echo $data["mhs_transfer"]; ?>
                                     </td>
                                     <td>
-                                        <font size="2%;">Edit
+                                        Edit
                                     </td>
                                     <td>
-                                        <font size="2%;">Delete
+                                        Delete
                                     </td>
                                 </tr>
 

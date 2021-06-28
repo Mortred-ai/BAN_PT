@@ -67,49 +67,49 @@ $query = mysqli_query($db, "SELECT * FROM tbl_kerjasama_pendidikan");
 							while ($data = mysqli_fetch_array($query)) {
 							?>
 
-								<tr role="row" class="odd">
+								<tr role="row" class="odd" style="font-size: 14px;">
 									<td>
-										<font size="2%;">
-											<p class="text-break"><?php echo $data["lembaga_mitra"]; ?></p>
-										</font>
+
+										<p class="text-break"><?php echo $data["lembaga_mitra"]; ?></p>
+
 									</td>
 									<td>
-										<font size="2%;">
-											<p class="text-break"><?php echo $data["tingkat"]; ?></p>
-										</font>
+
+										<p class="text-break"><?php echo $data["tingkat"]; ?></p>
+
 									</td>
 									<td>
-										<font size="2%;">
-											<p class="text-break"><?php echo $data["judul_keg_kerjasama"]; ?></p>
-										</font>
+
+										<p class="text-break"><?php echo $data["judul_keg_kerjasama"]; ?></p>
+
 									</td>
 									<td>
-										<font size="2%;">
-											<p class="text-break"><?php echo $data["manfaat"]; ?></p>
-										</font>
+
+										<p class="text-break"><?php echo $data["manfaat"]; ?></p>
+
 									</td>
 									<td>
-										<font size="2%;">
-											<p class="text-break"><?php echo $data["waktu_durasi"]; ?></p>
-										</font>
+
+										<p class="text-break"><?php echo $data["waktu_durasi"]; ?></p>
+
 									</td>
 									<td>
-										<font size="2%;">
-											<p class="text-break"><?php echo $data["bukti_kerjasama"]; ?></p>
-										</font>
+
+										<p class="text-break"><?php echo $data["bukti_kerjasama"]; ?></p>
+
 									</td>
 									<td>
-										<font size="2%;">
-											<p class="text-break"><?php echo $data["tahun_berakhir"]; ?></p>
-										</font>
+
+										<p class="text-break"><?php echo $data["tahun_berakhir"]; ?></p>
+
 									</td>
 									<td>
-										<font size="2%;">
-											<p class="text-break">Edit</p>
+
+										<p class="text-break">Edit</p>
 									</td>
 									<td>
-										<font size="2%;">
-											<p class="text-break">Delete</p>
+
+										<p class="text-break">Delete</p>
 									</td>
 								</tr>
 

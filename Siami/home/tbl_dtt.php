@@ -68,59 +68,59 @@ $query = mysqli_query($db, "SELECT * FROM  tbl_dosen_tdk_tetap");
                             while ($data = mysqli_fetch_array($query)) {
                             ?>
 
-                                <tr role="row" class="odd">
+                                <tr role="row" class="odd" style="font-size: 14px;">
                                     <td>
-                                        <font size="2%;">
-                                            <p class="text-break"><?php echo $data["nama_dosen"]; ?></p>
-                                        </font>
+
+                                        <p class="text-break"><?php echo $data["nama_dosen"]; ?></p>
+
                                     </td>
                                     <td>
-                                        <font size="2%;">
-                                            <p class="text-break"><?php echo $data["nidn"]; ?></p>
-                                        </font>
+
+                                        <p class="text-break"><?php echo $data["nidn"]; ?></p>
+
                                     </td>
                                     <td>
-                                        <font size="2%;">
-                                            <p class="text-break"><?php echo $data["pend_pasca_sarjana"]; ?></p>
-                                        </font>
+
+                                        <p class="text-break"><?php echo $data["pend_pasca_sarjana"]; ?></p>
+
                                     </td>
                                     <td>
-                                        <font size="2%;">
-                                            <p class="text-break"><?php echo $data["bid_keahlian"]; ?></p>
-                                        </font>
+
+                                        <p class="text-break"><?php echo $data["bid_keahlian"]; ?></p>
+
                                     </td>
                                     <td>
-                                        <font size="2%;">
-                                            <p class="text-break"><?php echo $data["jab_akademik"]; ?></p>
-                                        </font>
+
+                                        <p class="text-break"><?php echo $data["jab_akademik"]; ?></p>
+
                                     </td>
                                     <td>
-                                        <font size="2%;">
-                                            <p class="text-break"><?php echo $data["sertif_pendidik"]; ?></p>
-                                        </font>
+
+                                        <p class="text-break"><?php echo $data["sertif_pendidik"]; ?></p>
+
                                     </td>
                                     <td>
-                                        <font size="2%;">
-                                            <p class="text-break"><?php echo $data["sertif_komp"]; ?></p>
-                                        </font>
+
+                                        <p class="text-break"><?php echo $data["sertif_komp"]; ?></p>
+
                                     </td>
                                     <td>
-                                        <font size="2%;">
-                                            <p class="text-break"><?php echo $data["matkul_ps_akred"]; ?></p>
-                                        </font>
+
+                                        <p class="text-break"><?php echo $data["matkul_ps_akred"]; ?></p>
+
                                     </td>
                                     <td>
-                                        <font size="2%;">
-                                            <p class="text-break"><?php echo $data["kesesuaian_bid_matkul"]; ?></p>
-                                        </font>
+
+                                        <p class="text-break"><?php echo $data["kesesuaian_bid_matkul"]; ?></p>
+
                                     </td>
                                     <td>
-                                        <font size="2%;">
-                                            <p class="text-break">Edit</p>
+
+                                        <p class="text-break">Edit</p>
                                     </td>
                                     <td>
-                                        <font size="2%;">
-                                            <p class="text-break">Delete</p>
+
+                                        <p class="text-break">Delete</p>
                                     </td>
                                 </tr>
 

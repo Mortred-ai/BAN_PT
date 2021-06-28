@@ -57,59 +57,59 @@
                                 while ($data = mysqli_fetch_array($query)) {
                                 ?>
 
-                                 <tr role="row" class="odd">
+                                 <tr role="row" class="odd" style="font-size: 14px;">
                                      <td>
-                                         <font size="2%;">
-                                             <p class="text-break"><?php echo $data["jenis_penggunaan"]; ?></p>
-                                         </font>
+
+                                         <p class="text-break"><?php echo $data["jenis_penggunaan"]; ?></p>
+
                                      </td>
                                      <td>
-                                         <font size="2%;">
-                                             <p class="text-break"><?php echo $data["ts2_unit_pengelola_prodi"]; ?></p>
-                                         </font>
+
+                                         <p class="text-break"><?php echo $data["ts2_unit_pengelola_prodi"]; ?></p>
+
                                      </td>
                                      <td>
-                                         <font size="2%;">
-                                             <p class="text-break"><?php echo $data["ts1_unit_pengelola_prodi"]; ?></p>
-                                         </font>
+
+                                         <p class="text-break"><?php echo $data["ts1_unit_pengelola_prodi"]; ?></p>
+
                                      </td>
                                      <td>
-                                         <font size="2%;">
-                                             <p class="text-break"><?php echo $data["ts_unit_pengelola_prodi"]; ?></p>
-                                         </font>
+
+                                         <p class="text-break"><?php echo $data["ts_unit_pengelola_prodi"]; ?></p>
+
                                      </td>
                                      <td>
-                                         <font size="2%;">
-                                             <p class="text-break"><?php echo $data["avg_unit_pengelola_prodi"]; ?></p>
-                                         </font>
+
+                                         <p class="text-break"><?php echo $data["avg_unit_pengelola_prodi"]; ?></p>
+
                                      </td>
                                      <td>
-                                         <font size="2%;">
-                                             <p class="text-break"><?php echo $data["ts2_prodi"]; ?></p>
-                                         </font>
+
+                                         <p class="text-break"><?php echo $data["ts2_prodi"]; ?></p>
+
                                      </td>
                                      <td>
-                                         <font size="2%;">
-                                             <p class="text-break"><?php echo $data["ts1_prodi"]; ?></p>
-                                         </font>
+
+                                         <p class="text-break"><?php echo $data["ts1_prodi"]; ?></p>
+
                                      </td>
                                      <td>
-                                         <font size="2%;">
-                                             <p class="text-break"><?php echo $data["ts_prodi"]; ?></p>
-                                         </font>
+
+                                         <p class="text-break"><?php echo $data["ts_prodi"]; ?></p>
+
                                      </td>
                                      <td>
-                                         <font size="2%;">
-                                             <p class="text-break"><?php echo $data["avg_prodi"]; ?></p>
-                                         </font>
+
+                                         <p class="text-break"><?php echo $data["avg_prodi"]; ?></p>
+
                                      </td>
                                      <td>
-                                         <font size="2%;">
-                                             <p class="text-break">Edit</p>
+
+                                         <p class="text-break">Edit</p>
                                      </td>
                                      <td>
-                                         <font size="2%;">
-                                             <p class="text-break">Delete</p>
+
+                                         <p class="text-break">Delete</p>
                                      </td>
                                  </tr>
 

@@ -63,39 +63,39 @@ $query = mysqli_query($db, "SELECT * FROM  tbl_publ_dtps");
                             while ($data = mysqli_fetch_array($query)) {
                             ?>
 
-                                <tr role="row" class="odd">
+                                <tr role="row" class="odd" style="font-size: 14px;">
                                     <td>
-                                        <font size="2%;">
-                                            <p class="text-break"><?php echo $data["jenis_publikasi"]; ?></p>
-                                        </font>
+
+                                        <p class="text-break"><?php echo $data["jenis_publikasi"]; ?></p>
+
                                     </td>
                                     <td>
-                                        <font size="2%;">
-                                            <p class="text-break"><?php echo $data["jml_ts2"]; ?></p>
-                                        </font>
+
+                                        <p class="text-break"><?php echo $data["jml_ts2"]; ?></p>
+
                                     </td>
                                     <td>
-                                        <font size="2%;">
-                                            <p class="text-break"><?php echo $data["jml_ts1"]; ?></p>
-                                        </font>
+
+                                        <p class="text-break"><?php echo $data["jml_ts1"]; ?></p>
+
                                     </td>
                                     <td>
-                                        <font size="2%;">
-                                            <p class="text-break"><?php echo $data["jml_ts"]; ?></p>
-                                        </font>
+
+                                        <p class="text-break"><?php echo $data["jml_ts"]; ?></p>
+
                                     </td>
                                     <td>
-                                        <font size="2%;">
-                                            <p class="text-break"><?php echo $data["jumlah"]; ?></p>
-                                        </font>
+
+                                        <p class="text-break"><?php echo $data["jumlah"]; ?></p>
+
                                     </td>
                                     <td>
-                                        <font size="2%;">
-                                            <p class="text-break">Edit</p>
+
+                                        <p class="text-break">Edit</p>
                                     </td>
                                     <td>
-                                        <font size="2%;">
-                                            <p class="text-break">Delete</p>
+
+                                        <p class="text-break">Delete</p>
                                     </td>
                                 </tr>
 

@@ -58,42 +58,42 @@
                                 while ($data = mysqli_fetch_array($query)) {
                                 ?>
 
-                                 <tr role="row" class="odd">
+                                 <tr role="row" class="odd" style="font-size: 14px;">
                                      <td>
-                                         <font size="2%;"><?php echo $data["nama_dosen"]; ?></font>
+                                         <?php echo $data["nama_dosen"]; ?>
                                      </td>
                                      <td>
-                                         <font size="2%;"><?php echo $data["ts2_ps_akred"]; ?></font>
+                                         <?php echo $data["ts2_ps_akred"]; ?>
                                      </td>
                                      <td>
-                                         <font size="2%;"><?php echo $data["ts1_ps_akred"]; ?></font>
+                                         <?php echo $data["ts1_ps_akred"]; ?>
                                      </td>
                                      <td>
-                                         <font size="2%;"><?php echo $data["ts_ps_akred"]; ?></font>
+                                         <?php echo $data["ts_ps_akred"]; ?>
                                      </td>
                                      <td>
-                                         <font size="2%;"></font>
+
                                      </td>
                                      <td>
-                                         <font size="2%;"><?php echo $data["ts2_lain_pt"]; ?></font>
+                                         <?php echo $data["ts2_lain_pt"]; ?>
                                      </td>
                                      <td>
-                                         <font size="2%;"><?php echo $data["ts1_lain_pt"]; ?></font>
+                                         <?php echo $data["ts1_lain_pt"]; ?>
                                      </td>
                                      <td>
-                                         <font size="2%;"><?php echo $data["ts_lain_pt"]; ?></font>
+                                         <?php echo $data["ts_lain_pt"]; ?>
                                      </td>
                                      <td>
-                                         <font size="2%;"></font>
+
                                      </td>
                                      <td>
-                                         <font size="2%;"></font>
+
                                      </td>
                                      <td>
-                                         <font size="2%;">Edit
+                                         Edit
                                      </td>
                                      <td>
-                                         <font size="2%;">Delete
+                                         Delete
                                      </td>
                                  </tr>
 

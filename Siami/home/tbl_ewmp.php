@@ -70,64 +70,64 @@
                                 while ($data = mysqli_fetch_array($query)) {
                                 ?>
 
-                                 <tr role="row" class="odd">
+                                 <tr role="row" class="odd" style="font-size: 14px;">
                                      <td>
-                                         <font size="2%;">
-                                             <p class="text-break"><?php echo $data["nama_dosen"]; ?></p>
-                                         </font>
+
+                                         <p class="text-break"><?php echo $data["nama_dosen"]; ?></p>
+
                                      </td>
                                      <td>
-                                         <font size="2%;">
-                                             <p class="text-break"><?php echo $data["dtps"]; ?></p>
-                                         </font>
+
+                                         <p class="text-break"><?php echo $data["dtps"]; ?></p>
+
                                      </td>
                                      <td>
-                                         <font size="2%;">
-                                             <p class="text-break"><?php echo $data["ps_akred"]; ?></p>
-                                         </font>
+
+                                         <p class="text-break"><?php echo $data["ps_akred"]; ?></p>
+
                                      </td>
                                      <td>
-                                         <font size="2%;">
-                                             <p class="text-break"><?php echo $data["ps_lain_dalam_pt"]; ?></p>
-                                         </font>
+
+                                         <p class="text-break"><?php echo $data["ps_lain_dalam_pt"]; ?></p>
+
                                      </td>
                                      <td>
-                                         <font size="2%;">
-                                             <p class="text-break"><?php echo $data["ps_lain_luar_pt"]; ?></p>
-                                         </font>
+
+                                         <p class="text-break"><?php echo $data["ps_lain_luar_pt"]; ?></p>
+
                                      </td>
                                      <td>
-                                         <font size="2%;">
-                                             <p class="text-break"><?php echo $data["penelitian"]; ?></p>
-                                         </font>
+
+                                         <p class="text-break"><?php echo $data["penelitian"]; ?></p>
+
                                      </td>
                                      <td>
-                                         <font size="2%;">
-                                             <p class="text-break"><?php echo $data["pkm"]; ?></p>
-                                         </font>
+
+                                         <p class="text-break"><?php echo $data["pkm"]; ?></p>
+
                                      </td>
                                      <td>
-                                         <font size="2%;">
-                                             <p class="text-break"><?php echo $data["tugas_tambahan"]; ?></p>
-                                         </font>
+
+                                         <p class="text-break"><?php echo $data["tugas_tambahan"]; ?></p>
+
                                      </td>
                                      <td>
-                                         <font size="2%;">
-                                             <p class="text-break"><?php echo $data["jml_sks"]; ?></p>
-                                         </font>
+
+                                         <p class="text-break"><?php echo $data["jml_sks"]; ?></p>
+
                                      </td>
                                      <td>
-                                         <font size="2%;">
-                                             <p class="text-break"><?php echo $data["avg_per_smt"]; ?></p>
-                                         </font>
+
+                                         <p class="text-break"><?php echo $data["avg_per_smt"]; ?></p>
+
                                      </td>
                                      <td>
-                                         <font size="2%;">
-                                             <p class="text-break">Edit</p>
+
+                                         <p class="text-break">Edit</p>
                                      </td>
                                      <td>
-                                         <font size="2%;">
-                                             <p class="text-break">Delete</p>
+
+                                         <p class="text-break">Delete</p>
                                      </td>
                                  </tr>
 

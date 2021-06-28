@@ -70,64 +70,64 @@ $query = mysqli_query($db, "SELECT * FROM  tbl_dosen_tetap");
                             while ($data = mysqli_fetch_array($query)) {
                             ?>
 
-                                <tr role="row" class="odd">
+                                <tr role="row" class="odd" style="font-size: 14px;">
                                     <td>
-                                        <font size="2%;">
-                                            <p class="text-break"><?php echo $data["nama_dosen"]; ?></p>
-                                        </font>
+
+                                        <p class="text-break"><?php echo $data["nama_dosen"]; ?></p>
+
                                     </td>
                                     <td>
-                                        <font size="2%;">
-                                            <p class="text-break"><?php echo $data["nidn"]; ?></p>
-                                        </font>
+
+                                        <p class="text-break"><?php echo $data["nidn"]; ?></p>
+
                                     </td>
                                     <td>
-                                        <font size="2%;">
-                                            <p class="text-break"><?php echo $data["bidang_keahlian"]; ?></p>
-                                        </font>
+
+                                        <p class="text-break"><?php echo $data["bidang_keahlian"]; ?></p>
+
                                     </td>
                                     <td>
-                                        <font size="2%;">
-                                            <p class="text-break"><?php echo $data["kesesuaian_KIPS"]; ?></p>
-                                        </font>
+
+                                        <p class="text-break"><?php echo $data["kesesuaian_KIPS"]; ?></p>
+
                                     </td>
                                     <td>
-                                        <font size="2%;">
-                                            <p class="text-break"><?php echo $data["jab_akademik"]; ?></p>
-                                        </font>
+
+                                        <p class="text-break"><?php echo $data["jab_akademik"]; ?></p>
+
                                     </td>
                                     <td>
-                                        <font size="2%;">
-                                            <p class="text-break"><?php echo $data["sertif_pendidik"]; ?></p>
-                                        </font>
+
+                                        <p class="text-break"><?php echo $data["sertif_pendidik"]; ?></p>
+
                                     </td>
                                     <td>
-                                        <font size="2%;">
-                                            <p class="text-break"><?php echo $data["sertif_kompetensi"]; ?></p>
-                                        </font>
+
+                                        <p class="text-break"><?php echo $data["sertif_kompetensi"]; ?></p>
+
                                     </td>
                                     <td>
-                                        <font size="2%;">
-                                            <p class="text-break"><?php echo $data["matkul_yang_diampu"]; ?></p>
-                                        </font>
+
+                                        <p class="text-break"><?php echo $data["matkul_yang_diampu"]; ?></p>
+
                                     </td>
                                     <td>
-                                        <font size="2%;">
-                                            <p class="text-break"><?php echo $data["kesesuaian_matkul"]; ?></p>
-                                        </font>
+
+                                        <p class="text-break"><?php echo $data["kesesuaian_matkul"]; ?></p>
+
                                     </td>
                                     <td>
-                                        <font size="2%;">
-                                            <p class="text-break"><?php echo $data["matkul_PS_lain"]; ?></p>
-                                        </font>
+
+                                        <p class="text-break"><?php echo $data["matkul_PS_lain"]; ?></p>
+
                                     </td>
                                     <td>
-                                        <font size="2%;">
-                                            <p class="text-break">Edit</p>
+
+                                        <p class="text-break">Edit</p>
                                     </td>
                                     <td>
-                                        <font size="2%;">
-                                            <p class="text-break">Delete</p>
+
+                                        <p class="text-break">Delete</p>
                                     </td>
                                 </tr>
 

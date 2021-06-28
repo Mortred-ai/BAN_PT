@@ -50,29 +50,29 @@
                                 while ($data = mysqli_fetch_array($query)) {
                                 ?>
 
-                                 <tr role="row" class="odd">
+                                 <tr role="row" class="odd" style="font-size: 14px;">
                                      <td>
-                                         <font size="2%;">
-                                             <p class="text-break"><?php echo $data["luaran_pen_pkm"]; ?></p>
-                                         </font>
+
+                                         <p class="text-break"><?php echo $data["luaran_pen_pkm"]; ?></p>
+
                                      </td>
                                      <td>
-                                         <font size="2%;">
-                                             <p class="text-break"><?php echo $data["tahun"]; ?></p>
-                                         </font>
+
+                                         <p class="text-break"><?php echo $data["tahun"]; ?></p>
+
                                      </td>
                                      <td>
-                                         <font size="2%;">
-                                             <p class="text-break"><?php echo $data["keterangan"]; ?></p>
-                                         </font>
+
+                                         <p class="text-break"><?php echo $data["keterangan"]; ?></p>
+
                                      </td>
                                      <td>
-                                         <font size="2%;">
-                                             <p class="text-break">Edit</p>
+
+                                         <p class="text-break">Edit</p>
                                      </td>
                                      <td>
-                                         <font size="2%;">
-                                             <p class="text-break">Delete</p>
+
+                                         <p class="text-break">Delete</p>
                                      </td>
                                  </tr>
 

@@ -61,29 +61,29 @@ $query = mysqli_query($db, "SELECT * FROM  tbl_ki_dtps_sitasi");
                             while ($data = mysqli_fetch_array($query)) {
                             ?>
 
-                                <tr role="row" class="odd">
+                                <tr role="row" class="odd" style="font-size: 14px;">
                                     <td>
-                                        <font size="2%;">
-                                            <p class="text-break"><?php echo $data["nama_dosen"]; ?></p>
-                                        </font>
+
+                                        <p class="text-break"><?php echo $data["nama_dosen"]; ?></p>
+
                                     </td>
                                     <td>
-                                        <font size="2%;">
-                                            <p class="text-break"><?php echo $data["judul_artikel"]; ?></p>
-                                        </font>
+
+                                        <p class="text-break"><?php echo $data["judul_artikel"]; ?></p>
+
                                     </td>
                                     <td>
-                                        <font size="2%;">
-                                            <p class="text-break"><?php echo $data["jumlah_sitasi"]; ?></p>
-                                        </font>
+
+                                        <p class="text-break"><?php echo $data["jumlah_sitasi"]; ?></p>
+
                                     </td>
                                     <td>
-                                        <font size="2%;">
-                                            <p class="text-break">Edit</p>
+
+                                        <p class="text-break">Edit</p>
                                     </td>
                                     <td>
-                                        <font size="2%;">
-                                            <p class="text-break">Delete</p>
+
+                                        <p class="text-break">Delete</p>
                                     </td>
                                 </tr>
 
