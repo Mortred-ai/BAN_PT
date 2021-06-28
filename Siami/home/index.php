@@ -144,8 +144,8 @@ $query = mysqli_query($db, "SELECT * FROM tbl_akred_prodi");
 								require "tbl_isbn.php";
 							} else if ($page == "tbl_penggunaan_dana") {
 								require "tbl_penggunaan_dana.php";
-							} else if ($page == "tbl_semester") {
-								require "tbl_semester.php";
+							} else if ($page == "tbl_kurikulum") {
+								require "tbl_kurikulum.php";
 							} else if ($page == "tbl_integrasi") {
 								require "tbl_integrasi.php";
 							}
@@ -223,7 +223,7 @@ $query = mysqli_query($db, "SELECT * FROM tbl_akred_prodi");
 									<li class="drawer-menu-item "><a href="?p=tbl_ttg_dll">Teknologi Tepat Guna, Dll</a></li>
 									<li class="drawer-menu-item "><a href="?p=tbl_isbn_book">Buku Ber-ISBN</a></li>
 									<li class="drawer-menu-item "><a href="?p=tbl_penggunaan_dana">Penggunaan dana</a></li>
-									<li class="drawer-menu-item mb-4 "><a href="?p=tbl_semester">Kurikulum, Capaian Pembelajaran, dan Rencana </a></li>
+									<li class="drawer-menu-item mb-4 "><a href="?p=tbl_kurikulum">Kurikulum, Capaian Pembelajaran, dan Rencana(X)</a></li>
 									<li class="drawer-menu-item mb-5 "><a href="?p=tbl_integrasi">Integrasi Kegiatan Penelitian dalam Pembelajaran </a></li>
 								</ul>
 							</li>
@@ -307,7 +307,7 @@ $query = mysqli_query($db, "SELECT * FROM tbl_akred_prodi");
 					var drawer = document.querySelector(selector)
 					if (drawer) {
 						if (selector == '#default-drawer') {
-							$('.container-fluid').toggleClass('container--max');
+							$('.container-fluid').toggleClass('container-fluid');
 						}
 						drawer.mdkDrawer.toggle();
 					}

@@ -2,7 +2,7 @@
      <div class="card-body">
          <div class="row">
              <div class="col-sm-10 mt-2">
-                 <h2>Data Tabel Penggunaan Dana
+                 <h2>Data Tabel Kurikulum, Capaian Pembelajaran, dan Rencana Pembelajaran
                  </h2>
              </div>
              <div class="col-sm-2 mt-2">
@@ -15,7 +15,7 @@
  <?php
     include "../config/database.php";
 
-    $query = mysqli_query($db, "SELECT * FROM  tbl_penggunaan_dana");
+    $query = mysqli_query($db, "SELECT * FROM  tbl_kurikulum");
     ?>
 
  <div class="card">
@@ -50,6 +50,8 @@
                                  <th style="width: 63.2px;">Pengetahuan</th>
                                  <th style="width: 63.2px;">Keterampilan Umum</th>
                                  <th style="width: 63.2px;">Keterampilan Khusus</th>
+                                 <th style="width: 63.2px;">Dokumen Rencana Pembelajaran</th>
+                                 <th style="width: 63.2px;">Unit Penyelenggara</th>
                                  <th style="width: 40.2px;">Edit </th>
                                  <th style="width: 40.2px;">Delete </th>
                              </tr>
@@ -63,47 +65,72 @@
                                  <tr role="row" class="odd" style="font-size: 14px;">
                                      <td>
 
-                                         <p class="text-break"><?php echo $data["jenis_penggunaan"]; ?></p>
+                                         <p class="text-break"><?php echo $data["semester"]; ?></p>
 
                                      </td>
                                      <td>
 
-                                         <p class="text-break"><?php echo $data["ts2_unit_pengelola_prodi"]; ?></p>
+                                         <p class="text-break"><?php echo $data["kode_matkul"]; ?></p>
 
                                      </td>
                                      <td>
 
-                                         <p class="text-break"><?php echo $data["ts1_unit_pengelola_prodi"]; ?></p>
+                                         <p class="text-break"><?php echo $data["nama_matkul"]; ?></p>
 
                                      </td>
                                      <td>
 
-                                         <p class="text-break"><?php echo $data["ts_unit_pengelola_prodi"]; ?></p>
+                                         <p class="text-break"><?php echo $data["matkul_kompetensi"]; ?></p>
 
                                      </td>
                                      <td>
 
-                                         <p class="text-break"><?php echo $data["avg_unit_pengelola_prodi"]; ?></p>
+                                         <p class="text-break"><?php echo $data["sks_kuliah"]; ?></p>
 
                                      </td>
                                      <td>
 
-                                         <p class="text-break"><?php echo $data["ts2_prodi"]; ?></p>
+                                         <p class="text-break"><?php echo $data["sks_seminar"]; ?></p>
 
                                      </td>
                                      <td>
 
-                                         <p class="text-break"><?php echo $data["ts1_prodi"]; ?></p>
+                                         <p class="text-break"><?php echo $data["sks_praktikum"]; ?></p>
 
                                      </td>
                                      <td>
 
-                                         <p class="text-break"><?php echo $data["ts_prodi"]; ?></p>
+                                         <p class="text-break"><?php echo $data["konversi_kredit"]; ?></p>
 
                                      </td>
                                      <td>
 
-                                         <p class="text-break"><?php echo $data["avg_prodi"]; ?></p>
+                                         <p class="text-break"><?php echo $data["capem_sikap"]; ?></p>
+
+                                     </td>
+                                     <td>
+
+                                         <p class="text-break"><?php echo $data["capem_pengetahuan"]; ?></p>
+
+                                     </td>
+                                     <td>
+
+                                         <p class="text-break"><?php echo $data["capem_keterampilan_umum"]; ?></p>
+
+                                     </td>
+                                     <td>
+
+                                         <p class="text-break"><?php echo $data["capem_keterampilan_khusus"]; ?></p>
+
+                                     </td>
+                                     <td>
+
+                                         <p class="text-break"><?php echo $data["dok_renc_pembelajaran"]; ?></p>
+
+                                     </td>
+                                     <td>
+
+                                         <p class="text-break"><?php echo $data["unit_penyelenggara"]; ?></p>
 
                                      </td>
                                      <td>
