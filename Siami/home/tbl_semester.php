@@ -38,15 +38,18 @@
                      <table style="width: 100%;" id="example" class="table table-hover table-striped table-bordered dataTable dtr-inline" role="grid" aria-describedby="example_info">
                          <thead>
                              <tr role="row">
-                                 <th style="width: 118.2px;">Jenis Penggunaan </th>
-                                 <th style="width: 82.2px;">TS2 </th>
-                                 <th style="width: 63.2px;">TS1</th>
-                                 <th style="width: 63.2px;">TS</th>
-                                 <th style="width: 63.2px;">Average</th>
-                                 <th style="width: 82.2px;">TS2 </th>
-                                 <th style="width: 63.2px;">TS1</th>
-                                 <th style="width: 63.2px;">TS</th>
-                                 <th style="width: 63.2px;">Average</th>
+                                 <th style="width: 118.2px;">Semester </th>
+                                 <th style="width: 82.2px;">Kode Mata Kuliah </th>
+                                 <th style="width: 63.2px;">Nama Mata Kuliah</th>
+                                 <th style="width: 63.2px;">Mata Kuliah Kompetensi</th>
+                                 <th style="width: 63.2px;">Kuliah/ Responsi/ Tutorial</th>
+                                 <th style="width: 82.2px;">Seminar </th>
+                                 <th style="width: 63.2px;">Praktikum/ Praktik/ Praktik Lapangan</th>
+                                 <th style="width: 63.2px;">Konversi Kredit ke Jam</th>
+                                 <th style="width: 63.2px;">Sikap</th>
+                                 <th style="width: 63.2px;">Pengetahuan</th>
+                                 <th style="width: 63.2px;">Keterampilan Umum</th>
+                                 <th style="width: 63.2px;">Keterampilan Khusus</th>
                                  <th style="width: 40.2px;">Edit </th>
                                  <th style="width: 40.2px;">Delete </th>
                              </tr>
