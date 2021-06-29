@@ -95,11 +95,9 @@
 
 
                                      <td>
-
                                          <p class="text-break">Edit</p>
                                      </td>
                                      <td>
-
                                          <p class="text-break">Delete</p>
                                      </td>
                                  </tr>

@@ -257,7 +257,7 @@ $query = mysqli_query($db, "SELECT * FROM tbl_akred_prodi");
 									<li class="drawer-menu-item "><a href="?p=tbl_waktu_tunggu">Waktu Tunggu Lulusan (X)</a></li>
 									<li class="drawer-menu-item "><a href="?p=tbl_kesesuaian_bidang">Kesesuaian Bidang Kerja</a></li>
 									<li class="drawer-menu-item "><a href="?p=tbl_tempat_lulusan">Tempat Kerja Lulusan</a></li>
-									<li class="drawer-menu-item "><a href="?p=tbl_kepuasan_lulusan">Kepuasan Pengguna Lulusan</a></li>
+									<li class="drawer-menu-item"><a href="?p=tbl_kepuasan_lulusan">Kepuasan Pengguna Lulusan</a></li>
 								</ul>
 							</li>
 						</ul>
