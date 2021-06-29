@@ -160,6 +160,12 @@ $query = mysqli_query($db, "SELECT * FROM tbl_akred_prodi");
 								require "tbl_prestasi_mhs.php";
 							} else if ($page == "tbl_prestasi_na_mhs") {
 								require "tbl_prestasi_na_mhs.php";
+							} else if ($page == "tbl_masa_studi") {
+								require "tbl_masa_studi.php";
+							} else if ($page == "tbl_waktu_tunggu") {
+								require "tbl_waktu_tunggu.php";
+							} else if ($page == "tbl_kesesuaian_bidang") {
+								require "tbl_kesesuaian_bidang.php";
 							}
 
 
@@ -235,14 +241,17 @@ $query = mysqli_query($db, "SELECT * FROM tbl_akred_prodi");
 									<li class="drawer-menu-item "><a href="?p=tbl_ttg_dll">Teknologi Tepat Guna, Dll</a></li>
 									<li class="drawer-menu-item "><a href="?p=tbl_isbn_book">Buku Ber-ISBN</a></li>
 									<li class="drawer-menu-item "><a href="?p=tbl_penggunaan_dana">Penggunaan dana</a></li>
-									<li class="drawer-menu-item mb-4 "><a href="?p=tbl_kurikulum">Kurikulum, Capaian Pembelajaran, dan Rencana(X)</a></li>
+									<li class="drawer-menu-item mb-5 "><a href="?p=tbl_kurikulum">Kurikulum, Capaian Pembelajaran, dan Rencana (X)</a></li>
 									<li class="drawer-menu-item mb-4"><a href="?p=tbl_integrasi">Integrasi Kegiatan Penelitian dalam Pembelajaran </a></li>
 									<li class="drawer-menu-item "><a href="?p=tbl_kepuasan_mhs">Kepuasan Mahasiswa</a></li>
 									<li class="drawer-menu-item mb-4"><a href="?p=tbl_penelitian_dtps_mhs">Penelitian DTPS yang Melibatkan Mahasiswa</a></li>
 									<li class="drawer-menu-item mb-4"><a href="?p=tbl_pkm_dtps_mhs">PkM DTPS yang Melibatkan Mahasiswa</a></li>
 									<li class="drawer-menu-item "><a href="?p=tbl_ipk_lulusan">IPK Lulusan</a></li>
 									<li class="drawer-menu-item mb-4"><a href="?p=tbl_prestasi_mhs">Prestasi Akademik Mahasiswa</a></li>
-									<li class="drawer-menu-item "><a href="?p=tbl_prestasi_na_mhs">Prestasi Non-akademik Mahasiswa</a></li>
+									<li class="drawer-menu-item mb-4"><a href="?p=tbl_prestasi_na_mhs">Prestasi Non-akademik Mahasiswa</a></li>
+									<li class="drawer-menu-item "><a href="?p=tbl_masa_studi">Masa Studi Lulusan (X)</a></li>
+									<li class="drawer-menu-item "><a href="?p=tbl_waktu_tunggu">Waktu Tunggu Lulusan (X)</a></li>
+									<li class="drawer-menu-item "><a href="?p=tbl_kesesuaian_bidang">Kesesuaian Bidang Kerja</a></li>
 								</ul>
 							</li>
 						</ul>
