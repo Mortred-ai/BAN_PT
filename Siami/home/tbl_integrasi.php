@@ -2,7 +2,7 @@
      <div class="card-body">
          <div class="row">
              <div class="col-sm-10 mt-2">
-                 <h2>Data Tabel Kurikulum, Capaian Pembelajaran, dan Rencana Pembelajaran
+                 <h2>Data Tabel Integrasi Kegiatan Penelitian/PkM dalam Pembelajaran
                  </h2>
              </div>
              <div class="col-sm-2 mt-2">
@@ -16,7 +16,7 @@
 
     include "../config/database.php";
 
-    $query = mysqli_query($db, "SELECT * FROM  tbl_penggunaan_dana");
+    $query = mysqli_query($db, "SELECT * FROM  tbl_integrasi_pkm");
     ?>
 
  <div class="card">
@@ -39,20 +39,11 @@
                      <table style="width: 100%;" id="example" class="table table-hover table-striped table-bordered dataTable dtr-inline" role="grid" aria-describedby="example_info">
                          <thead>
                              <tr role="row">
-                                 <th style="width: 118.2px;">Semester </th>
-                                 <th style="width: 82.2px;">Kode Mata Kuliah </th>
-                                 <th style="width: 63.2px;">Nama Mata Kuliah</th>
-                                 <th style="width: 63.2px;">Mata Kuliah Kompetensi</th>
-                                 <th style="width: 63.2px;">Kuliah/ Responsi/ Tutorial</th>
-                                 <th style="width: 82.2px;">Seminar </th>
-                                 <th style="width: 63.2px;">Praktikum/ Praktik/ Praktik Lapangan</th>
-                                 <th style="width: 63.2px;">Konversi Kredit ke Jam</th>
-                                 <th style="width: 63.2px;">Sikap</th>
-                                 <th style="width: 63.2px;">Pengetahuan</th>
-                                 <th style="width: 63.2px;">Keterampilan Umum</th>
-                                 <th style="width: 63.2px;">Keterampilan Khusus</th>
-                                 <th style="width: 63.2px;">Dokumen Rencana Pembelajaran</th>
-                                 <th style="width: 63.2px;">Unit Penyelenggara</th>
+                                 <th style="width: 118.2px;">Judul Penelitian/Pkm </th>
+                                 <th style="width: 82.2px;">Nama Dosen </th>
+                                 <th style="width: 63.2px;">Mata Kuliah</th>
+                                 <th style="width: 63.2px;">Bentuk Integrasi</th>
+                                 <th style="width: 63.2px;">Tahun</th>
                                  <th style="width: 40.2px;">Edit </th>
                                  <th style="width: 40.2px;">Delete </th>
                              </tr>
@@ -66,49 +57,31 @@
                                  <tr role="row" class="odd" style="font-size: 14px;">
                                      <td>
 
-                                         <p class="text-break"><?php echo $data["jenis_penggunaan"]; ?></p>
+                                         <p class="text-break"><?php echo $data["judul_penelitian"]; ?></p>
 
                                      </td>
                                      <td>
 
-                                         <p class="text-break"><?php echo $data["ts2_unit_pengelola_prodi"]; ?></p>
+                                         <p class="text-break"><?php echo $data["nama_dosen"]; ?></p>
 
                                      </td>
                                      <td>
 
-                                         <p class="text-break"><?php echo $data["ts1_unit_pengelola_prodi"]; ?></p>
+                                         <p class="text-break"><?php echo $data["matkul"]; ?></p>
 
                                      </td>
                                      <td>
 
-                                         <p class="text-break"><?php echo $data["ts_unit_pengelola_prodi"]; ?></p>
+                                         <p class="text-break"><?php echo $data["bentuk_integrasi"]; ?></p>
 
                                      </td>
                                      <td>
 
-                                         <p class="text-break"><?php echo $data["avg_unit_pengelola_prodi"]; ?></p>
+                                         <p class="text-break"><?php echo $data["tahun"]; ?></p>
 
                                      </td>
-                                     <td>
 
-                                         <p class="text-break"><?php echo $data["ts2_prodi"]; ?></p>
 
-                                     </td>
-                                     <td>
-
-                                         <p class="text-break"><?php echo $data["ts1_prodi"]; ?></p>
-
-                                     </td>
-                                     <td>
-
-                                         <p class="text-break"><?php echo $data["ts_prodi"]; ?></p>
-
-                                     </td>
-                                     <td>
-
-                                         <p class="text-break"><?php echo $data["avg_prodi"]; ?></p>
-
-                                     </td>
                                      <td>
 
                                          <p class="text-break">Edit</p>
