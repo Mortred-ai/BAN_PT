@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 26 Jun 2021 pada 08.59
+-- Waktu pembuatan: 29 Jun 2021 pada 09.42
 -- Versi server: 10.4.17-MariaDB
 -- Versi PHP: 7.4.13
 
@@ -172,8 +172,16 @@ CREATE TABLE `tbl_integrasi_pkm` (
   `nama_dosen` varchar(255) DEFAULT NULL,
   `matkul` varchar(255) DEFAULT NULL,
   `bentuk_integrasi` varchar(255) DEFAULT NULL,
-  `tahun` int(5) DEFAULT NULL
+  `tahun` int(5) DEFAULT NULL,
+  `id_akred_prodi` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
+
+--
+-- Dumping data untuk tabel `tbl_integrasi_pkm`
+--
+
+INSERT INTO `tbl_integrasi_pkm` (`id_integrasi_pkm`, `judul_penelitian`, `nama_dosen`, `matkul`, `bentuk_integrasi`, `tahun`, `id_akred_prodi`) VALUES
+(1, 'Judul Penelitian', 'Nama dosen', 'Matkul', 'Bentuk Integrasi', 2021, 1);
 
 -- --------------------------------------------------------
 
@@ -187,8 +195,16 @@ CREATE TABLE `tbl_ipk` (
   `jml_lulusan` int(15) DEFAULT NULL,
   `ipk_min` varchar(10) DEFAULT NULL,
   `ipk_max` varchar(10) DEFAULT NULL,
-  `avg_ipk` varchar(10) DEFAULT NULL
+  `avg_ipk` varchar(10) DEFAULT NULL,
+  `id_akred_prodi` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
+
+--
+-- Dumping data untuk tabel `tbl_ipk`
+--
+
+INSERT INTO `tbl_ipk` (`id_ipk`, `tahun_lulus`, `jml_lulusan`, `ipk_min`, `ipk_max`, `avg_ipk`, `id_akred_prodi`) VALUES
+(1, 'Tahun lulus', 100, '100', '100', '100', 1);
 
 -- --------------------------------------------------------
 
@@ -222,7 +238,8 @@ CREATE TABLE `tbl_kepuasan_lulusan` (
   `id_kepuasan_lulusan` int(5) NOT NULL,
   `tahun_lulus` varchar(10) DEFAULT NULL,
   `jml_lulusan` int(10) DEFAULT NULL,
-  `jml_tanggapan` int(10) DEFAULT NULL
+  `jml_tanggapan` int(10) DEFAULT NULL,
+  `id_akred_prodi` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
 
 -- --------------------------------------------------------
@@ -238,8 +255,16 @@ CREATE TABLE `tbl_kepuasan_mhs` (
   `prosen_b` varchar(5) DEFAULT NULL,
   `prosen_c` varchar(5) DEFAULT NULL,
   `prosen_k` varchar(5) DEFAULT NULL,
-  `tindak_lanjut_upps` text DEFAULT NULL
+  `tindak_lanjut_upps` text DEFAULT NULL,
+  `id_akred_prodi` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
+
+--
+-- Dumping data untuk tabel `tbl_kepuasan_mhs`
+--
+
+INSERT INTO `tbl_kepuasan_mhs` (`id_kepuasan_mhs`, `aspek`, `prosen_sb`, `prosen_b`, `prosen_c`, `prosen_k`, `tindak_lanjut_upps`, `id_akred_prodi`) VALUES
+(1, 'Aspek', 'SB', 'Baik', 'Cukup', 'Kuran', 'Tindak Lanjut UPPS', 1);
 
 -- --------------------------------------------------------
 
@@ -349,8 +374,16 @@ CREATE TABLE `tbl_kesesuaian_bidang_kerja` (
   `jml_lulusan_terlacak` int(10) DEFAULT NULL,
   `jml_kesesuaian_rendah` int(10) DEFAULT NULL,
   `jml_kesesuaian_sedang` int(10) DEFAULT NULL,
-  `jml_kesesuaian_tinggi` int(10) DEFAULT NULL
+  `jml_kesesuaian_tinggi` int(10) DEFAULT NULL,
+  `id_akred_prodi` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
+
+--
+-- Dumping data untuk tabel `tbl_kesesuaian_bidang_kerja`
+--
+
+INSERT INTO `tbl_kesesuaian_bidang_kerja` (`id_bidang_kerja_lulusan`, `tahun_lulus`, `jml_lulusan`, `jml_lulusan_terlacak`, `jml_kesesuaian_rendah`, `jml_kesesuaian_sedang`, `jml_kesesuaian_tinggi`, `id_akred_prodi`) VALUES
+(1, '2021', 100, 98, 67, 21, 2, 1);
 
 -- --------------------------------------------------------
 
@@ -383,6 +416,7 @@ CREATE TABLE `tbl_kurikulum` (
   `id_kurikulum` int(5) NOT NULL,
   `semester` varchar(100) DEFAULT NULL,
   `kode_matkul` varchar(15) DEFAULT NULL,
+  `nama_matkul` varchar(255) NOT NULL,
   `matkul_kompetensi` varchar(50) DEFAULT NULL,
   `sks_kuliah` varchar(255) DEFAULT NULL,
   `sks_seminar` varchar(255) DEFAULT NULL,
@@ -393,8 +427,16 @@ CREATE TABLE `tbl_kurikulum` (
   `capem_keterampilan_umum` varchar(15) DEFAULT NULL,
   `capem_keterampilan_khusus` varchar(15) DEFAULT NULL,
   `dok_renc_pembelajaran` varchar(255) DEFAULT NULL,
-  `unit_penyelenggara` varchar(255) DEFAULT NULL
+  `unit_penyelenggara` varchar(255) DEFAULT NULL,
+  `id_akred_prodi` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
+
+--
+-- Dumping data untuk tabel `tbl_kurikulum`
+--
+
+INSERT INTO `tbl_kurikulum` (`id_kurikulum`, `semester`, `kode_matkul`, `nama_matkul`, `matkul_kompetensi`, `sks_kuliah`, `sks_seminar`, `sks_praktikum`, `konversi_kredit`, `capem_sikap`, `capem_pengetahuan`, `capem_keterampilan_umum`, `capem_keterampilan_khusus`, `dok_renc_pembelajaran`, `unit_penyelenggara`, `id_akred_prodi`) VALUES
+(1, 'semester', 'kode matkul', 'Kurikulum, Capaian Pembelajaran, dan Rencana Pembelajaran', 'matkul kompetensi', 'sks kuliah', 'sks seminar', 'sks praktikum', 'konversi kredit', 'capem sikap', 'capem pengetahu', 'capem keterampi', 'capem keterampi', 'dok renc pembelajaran', 'unit penyelenggara', 1);
 
 -- --------------------------------------------------------
 
@@ -486,8 +528,16 @@ CREATE TABLE `tbl_pen_dtps_mhs` (
   `tema_pen` varchar(255) DEFAULT NULL,
   `nama_mhs` varchar(255) DEFAULT NULL,
   `judul_keg` varchar(255) DEFAULT NULL,
-  `tahun` int(5) DEFAULT NULL
+  `tahun` int(5) DEFAULT NULL,
+  `id_akred_prodi` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
+
+--
+-- Dumping data untuk tabel `tbl_pen_dtps_mhs`
+--
+
+INSERT INTO `tbl_pen_dtps_mhs` (`id_pen_dtps_mhs`, `nama_dosen`, `tema_pen`, `nama_mhs`, `judul_keg`, `tahun`, `id_akred_prodi`) VALUES
+(1, 'Nama Dosen', 'Tema penelitian ', 'Nama Mahasiswa', 'Judul Kegiatan', 2021, 1);
 
 -- --------------------------------------------------------
 
@@ -653,8 +703,16 @@ CREATE TABLE `tbl_pkm_dtps_mhs` (
   `tema_pkm` varchar(255) DEFAULT NULL,
   `nama_mhs` varchar(255) DEFAULT NULL,
   `judul_keg` varchar(255) DEFAULT NULL,
-  `tahun` int(5) DEFAULT NULL
+  `tahun` int(5) DEFAULT NULL,
+  `id_akred_prodi` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
+
+--
+-- Dumping data untuk tabel `tbl_pkm_dtps_mhs`
+--
+
+INSERT INTO `tbl_pkm_dtps_mhs` (`id_pen_dtps_mhs`, `nama_dosen`, `tema_pkm`, `nama_mhs`, `judul_keg`, `tahun`, `id_akred_prodi`) VALUES
+(1, 'Nama Dosen', 'Tema PKM', 'Nama Mahasiswa', 'Judul Kegiatan', 2021, 1);
 
 -- --------------------------------------------------------
 
@@ -667,8 +725,16 @@ CREATE TABLE `tbl_pres_akademik` (
   `nama_keg` varchar(255) DEFAULT NULL,
   `waktu_perolehan` int(5) DEFAULT NULL,
   `id_tingkat` int(5) DEFAULT NULL,
-  `pres_dicapai` varchar(100) DEFAULT NULL
+  `pres_dicapai` varchar(100) DEFAULT NULL,
+  `id_akred_prodi` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
+
+--
+-- Dumping data untuk tabel `tbl_pres_akademik`
+--
+
+INSERT INTO `tbl_pres_akademik` (`id_pres_akademik`, `nama_keg`, `waktu_perolehan`, `id_tingkat`, `pres_dicapai`, `id_akred_prodi`) VALUES
+(0, 'Nama Kegiatan', 1, 1, 'Prestasi yang Dicapai', 1);
 
 -- --------------------------------------------------------
 
@@ -681,8 +747,17 @@ CREATE TABLE `tbl_pres_non_akademik` (
   `nama_keg` varchar(255) DEFAULT NULL,
   `waktu_perolehan` int(5) DEFAULT NULL,
   `id_tingkat` int(5) DEFAULT NULL,
-  `pres_dicapai` varchar(100) DEFAULT NULL
+  `pres_dicapai` varchar(100) DEFAULT NULL,
+  `id_akred_prodi` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
+
+--
+-- Dumping data untuk tabel `tbl_pres_non_akademik`
+--
+
+INSERT INTO `tbl_pres_non_akademik` (`id_pres_akademik`, `nama_keg`, `waktu_perolehan`, `id_tingkat`, `pres_dicapai`, `id_akred_prodi`) VALUES
+(1, 'Nama Kegiatan Non Akademik', 2021, 2, 'Prestasi yang dicapai', 1),
+(2, 'Nama Kegiatan', 2021, 1, 'Prestasi yang Dicapai', 1);
 
 -- --------------------------------------------------------
 
@@ -784,8 +859,16 @@ CREATE TABLE `tbl_tempat_kerja_lulusan` (
   `jml_lulusan_terlacak` int(10) DEFAULT NULL,
   `jml_kerja_lokal` int(10) DEFAULT NULL,
   `jml_kerja_nasional` int(10) DEFAULT NULL,
-  `jml_kerja_internasional` int(10) DEFAULT NULL
+  `jml_kerja_internasional` int(10) DEFAULT NULL,
+  `id_akred_prodi` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
+
+--
+-- Dumping data untuk tabel `tbl_tempat_kerja_lulusan`
+--
+
+INSERT INTO `tbl_tempat_kerja_lulusan` (`id_tempat_kerja_lulusan`, `tahun_lulus`, `jml_lulusan`, `jml_lulusan_terlacak`, `jml_kerja_lokal`, `jml_kerja_nasional`, `jml_kerja_internasional`, `id_akred_prodi`) VALUES
+(1, '2021', 100, 61, 21, 2, 3, 1);
 
 -- --------------------------------------------------------
 
@@ -1138,13 +1221,13 @@ ALTER TABLE `tbl_ewmp_dosen_pti`
 -- AUTO_INCREMENT untuk tabel `tbl_integrasi_pkm`
 --
 ALTER TABLE `tbl_integrasi_pkm`
-  MODIFY `id_integrasi_pkm` int(5) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_integrasi_pkm` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT untuk tabel `tbl_ipk`
 --
 ALTER TABLE `tbl_ipk`
-  MODIFY `id_ipk` int(5) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_ipk` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT untuk tabel `tbl_jab_akademik`
@@ -1162,7 +1245,7 @@ ALTER TABLE `tbl_kepuasan_lulusan`
 -- AUTO_INCREMENT untuk tabel `tbl_kepuasan_mhs`
 --
 ALTER TABLE `tbl_kepuasan_mhs`
-  MODIFY `id_kepuasan_mhs` int(5) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_kepuasan_mhs` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT untuk tabel `tbl_kepuasan_pengguna_lulusan`
@@ -1192,7 +1275,7 @@ ALTER TABLE `tbl_kerjasama_peng_masy`
 -- AUTO_INCREMENT untuk tabel `tbl_kesesuaian_bidang_kerja`
 --
 ALTER TABLE `tbl_kesesuaian_bidang_kerja`
-  MODIFY `id_bidang_kerja_lulusan` int(5) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_bidang_kerja_lulusan` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT untuk tabel `tbl_ki_dtps_sitasi`
@@ -1204,7 +1287,7 @@ ALTER TABLE `tbl_ki_dtps_sitasi`
 -- AUTO_INCREMENT untuk tabel `tbl_kurikulum`
 --
 ALTER TABLE `tbl_kurikulum`
-  MODIFY `id_kurikulum` int(5) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_kurikulum` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT untuk tabel `tbl_mhs_asing`
@@ -1228,7 +1311,7 @@ ALTER TABLE `tbl_pen_dtps`
 -- AUTO_INCREMENT untuk tabel `tbl_pen_dtps_mhs`
 --
 ALTER TABLE `tbl_pen_dtps_mhs`
-  MODIFY `id_pen_dtps_mhs` int(5) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_pen_dtps_mhs` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT untuk tabel `tbl_pen_pkm_dtps_hakcipta`
@@ -1252,7 +1335,7 @@ ALTER TABLE `tbl_pen_pkm_dtps_paten`
 -- AUTO_INCREMENT untuk tabel `tbl_pen_pkm_dtps_teknocepat`
 --
 ALTER TABLE `tbl_pen_pkm_dtps_teknocepat`
-  MODIFY `id_pen_pkm_dtps_teknocepat` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id_pen_pkm_dtps_teknocepat` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT untuk tabel `tbl_pen_pkm_mhs_hakcipta`
@@ -1288,7 +1371,13 @@ ALTER TABLE `tbl_pkm_dtps`
 -- AUTO_INCREMENT untuk tabel `tbl_pkm_dtps_mhs`
 --
 ALTER TABLE `tbl_pkm_dtps_mhs`
-  MODIFY `id_pen_dtps_mhs` int(5) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_pen_dtps_mhs` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT untuk tabel `tbl_pres_non_akademik`
+--
+ALTER TABLE `tbl_pres_non_akademik`
+  MODIFY `id_pres_akademik` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT untuk tabel `tbl_publikasi_ilmiah_mhs`
@@ -1318,7 +1407,7 @@ ALTER TABLE `tbl_seleksi_maba`
 -- AUTO_INCREMENT untuk tabel `tbl_tempat_kerja_lulusan`
 --
 ALTER TABLE `tbl_tempat_kerja_lulusan`
-  MODIFY `id_tempat_kerja_lulusan` int(5) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_tempat_kerja_lulusan` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT untuk tabel `tbl_thajaran`
