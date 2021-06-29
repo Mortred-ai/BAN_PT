@@ -152,6 +152,8 @@ $query = mysqli_query($db, "SELECT * FROM tbl_akred_prodi");
 								require "tbl_kep_mhs.php";
 							} else if ($page == "tbl_penelitian_dtps_mhs") {
 								require "tbl_penelitian_dtps_mhs.php";
+							} else if ($page == "tbl_pkm_dtps_mhs") {
+								require "tbl_pkm_dtps_mhs.php";
 							}
 
 
@@ -231,6 +233,7 @@ $query = mysqli_query($db, "SELECT * FROM tbl_akred_prodi");
 									<li class="drawer-menu-item mb-4"><a href="?p=tbl_integrasi">Integrasi Kegiatan Penelitian dalam Pembelajaran </a></li>
 									<li class="drawer-menu-item "><a href="?p=tbl_kepuasan_mhs">Kepuasan Mahasiswa</a></li>
 									<li class="drawer-menu-item mb-4"><a href="?p=tbl_penelitian_dtps_mhs">Penelitian DTPS yang Melibatkan Mahasiswa</a></li>
+									<li class="drawer-menu-item mb-4"><a href="?p=tbl_pkm_dtps_mhs">PkM DTPS yang Melibatkan Mahasiswa</a></li>
 								</ul>
 							</li>
 						</ul>
