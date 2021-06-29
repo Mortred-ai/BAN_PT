@@ -38,18 +38,18 @@
                  <div class="col-sm-12">
                      <table style="width: 100%;" id="example" class="table table-hover table-striped table-bordered dataTable dtr-inline" role="grid" aria-describedby="example_info">
                          <thead>
-                             <tr role="row">
+                             <tr role="row ">
                                  <th rowspan="2" style="width: 118.2px;">Nama Kegiatan </th>
                                  <th rowspan="2" style=" width: 82.2px;">Waktu Perolehan </th>
-                                 <th colspan="3" style=" width: 82.2px;">Tingkat </th>
+                                 <th class="text-center" colspan="3" style=" width: 63.2px;">Tingkat </th>
                                  <th rowspan="2" style="width: 63.2px;">Prestasi yang Dicapai</th>
                                  <th rowspan="2" style="width: 40.2px;">Edit </th>
                                  <th rowspan="2" style="width: 40.2px;">Delete </th>
                              </tr>
                              <tr>
-                                 <th>Lokal</th>
-                                 <th>Nasional</th>
-                                 <th>Internasional</th>
+                                 <th class="text-center" style="width: 63.2px;">Lokal</th>
+                                 <th class="text-center" style="width: 63.2px;">Nasional</th>
+                                 <th class="text-center" style="width: 63.2px;">Internasional</th>
                              </tr>
                          </thead>
                          <tbody>
