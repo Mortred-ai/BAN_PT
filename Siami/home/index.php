@@ -158,6 +158,8 @@ $query = mysqli_query($db, "SELECT * FROM tbl_akred_prodi");
 								require "tbl_ipk_lulusan.php";
 							} else if ($page == "tbl_prestasi_mhs") {
 								require "tbl_prestasi_mhs.php";
+							} else if ($page == "tbl_prestasi_na_mhs") {
+								require "tbl_prestasi_na_mhs.php";
 							}
 
 
@@ -238,8 +240,9 @@ $query = mysqli_query($db, "SELECT * FROM tbl_akred_prodi");
 									<li class="drawer-menu-item "><a href="?p=tbl_kepuasan_mhs">Kepuasan Mahasiswa</a></li>
 									<li class="drawer-menu-item mb-4"><a href="?p=tbl_penelitian_dtps_mhs">Penelitian DTPS yang Melibatkan Mahasiswa</a></li>
 									<li class="drawer-menu-item mb-4"><a href="?p=tbl_pkm_dtps_mhs">PkM DTPS yang Melibatkan Mahasiswa</a></li>
-									<li class="drawer-menu-item"><a href="?p=tbl_ipk_lulusan">IPK Lulusan</a></li>
-									<li class="drawer-menu-item"><a href="?p=tbl_prestasi_mhs">Prestasi Akademik Mahasiswa</a></li>
+									<li class="drawer-menu-item "><a href="?p=tbl_ipk_lulusan">IPK Lulusan</a></li>
+									<li class="drawer-menu-item mb-4"><a href="?p=tbl_prestasi_mhs">Prestasi Akademik Mahasiswa</a></li>
+									<li class="drawer-menu-item "><a href="?p=tbl_prestasi_na_mhs">Prestasi Non-akademik Mahasiswa</a></li>
 								</ul>
 							</li>
 						</ul>
