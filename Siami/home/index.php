@@ -172,6 +172,10 @@ $query = mysqli_query($db, "SELECT * FROM tbl_akred_prodi");
 								require "tbl_kepuasan_lulusan.php";
 							} else if ($page == "tbl_publikasi_mhs") {
 								require "tbl_publikasi_mhs.php";
+							} else if ($page == "tbl_penelitian_mhs_paten") {
+								require "tbl_penelitian_mhs_paten.php";
+							} else if ($page == "tbl_penelitian_mhs_hki") {
+								require "tbl_penelitian_mhs_hki.php";
 							}
 
 
@@ -242,12 +246,12 @@ $query = mysqli_query($db, "SELECT * FROM tbl_akred_prodi");
 									<li class="drawer-menu-item "><a href="?p=tbl_pkm_dtps">PKM DTPS</a></li>
 									<li class="drawer-menu-item "><a href="?p=tbl_publikasi_ilmiah_dtps">Publikasi Ilmiah DTPS</a></li>
 									<li class="drawer-menu-item "><a href="?p=tbl_karya_ilmiah_dtps">Karya Ilmiah DTPS</a></li>
-									<li class="drawer-menu-item "><a href="?p=tbl_hki_paten">HKI (Paten,PatenSederhana)</a></li>
-									<li class="drawer-menu-item "><a href="?p=tbl_hki_hakcipta">HKI (Hak Cipta, Desain, Dll)</a></li>
+									<li class="drawer-menu-item mb-4"><a href="?p=tbl_hki_paten">Penelitian/PkM Lainnya HKI (Paten,PatenSederhana)</a></li>
+									<li class="drawer-menu-item mb-4"><a href="?p=tbl_hki_hakcipta">Penelitian/PkM Lainnya HKI (Hak Cipta, Desain, Dll)</a></li>
 									<li class="drawer-menu-item "><a href="?p=tbl_ttg_dll">Teknologi Tepat Guna, Dll</a></li>
 									<li class="drawer-menu-item "><a href="?p=tbl_isbn_book">Buku Ber-ISBN</a></li>
 									<li class="drawer-menu-item "><a href="?p=tbl_penggunaan_dana">Penggunaan dana</a></li>
-									<li class="drawer-menu-item mb-5	 "><a href="?p=tbl_kurikulum">Kurikulum, Capaian Pembelajaran, dan Rencana (X)</a></li>
+									<li class="drawer-menu-item mb-5"><a href="?p=tbl_kurikulum">Kurikulum, Capaian Pembelajaran, dan Rencana (X)</a></li>
 									<li class="drawer-menu-item mb-4"><a href="?p=tbl_integrasi">Integrasi Kegiatan Penelitian dalam Pembelajaran </a></li>
 									<li class="drawer-menu-item "><a href="?p=tbl_kepuasan_mhs">Kepuasan Mahasiswa</a></li>
 									<li class="drawer-menu-item mb-4"><a href="?p=tbl_penelitian_dtps_mhs">Penelitian DTPS yang Melibatkan Mahasiswa</a></li>
@@ -261,6 +265,8 @@ $query = mysqli_query($db, "SELECT * FROM tbl_akred_prodi");
 									<li class="drawer-menu-item "><a href="?p=tbl_tempat_lulusan">Tempat Kerja Lulusan</a></li>
 									<li class="drawer-menu-item mb-4"><a href="?p=tbl_kepuasan_lulusan">Kepuasan Pengguna Lulusan</a></li>
 									<li class="drawer-menu-item"><a href="?p=tbl_publikasi_mhs">Publikasi Ilmiah Mahasiswa</a></li>
+									<li class="drawer-menu-item mb-4"><a href="?p=tbl_penelitian_mhs_paten">Penelitian Mahasiswa - HKI (Paten, Paten Sederhana)</a></li>
+									<li class="drawer-menu-item mb-4"><a href="?p=tbl_penelitian_mhs_hki">Penelitian Mahasiswa - HKI (Hak Cipta, dll)</a></li>
 								</ul>
 							</li>
 						</ul>

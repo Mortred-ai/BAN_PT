@@ -2,7 +2,8 @@
      <div class="card-body">
          <div class="row">
              <div class="col-sm-10 mt-2">
-                 <h2>Data Tabel Luaran Penelitian/PkM Lainnya oleh DTPS - HKI (Hak Cipta, Desain Produk Industri, dll.)</h2>
+                 <h2>Data Tabel Tabel Luaran Penelitian yang Dihasilkan Mahasiswa - HKI (Hak Cipta, Desain Produk Industri, dll.)
+                 </h2>
              </div>
              <div class="col-sm-2 mt-2">
                  <button class="btn btn-primary">Tambah Data</button>
@@ -12,9 +13,10 @@
  </div>
 
  <?php
+
     include "../config/database.php";
 
-    $query = mysqli_query($db, "SELECT * FROM  tbl_pen_pkm_dtps_hakcipta");
+    $query = mysqli_query($db, "SELECT * FROM tbl_pen_pkm_mhs_hakcipta");
     ?>
 
  <div class="card">
@@ -37,8 +39,8 @@
                      <table style="width: 100%;" id="example" class="table table-hover table-striped table-bordered dataTable dtr-inline" role="grid" aria-describedby="example_info">
                          <thead>
                              <tr role="row">
-                                 <th style="width: 118.2px;">Luaran Penelitian dan PkM </th>
-                                 <th style="width: 82.2px;">Tahun </th>
+                                 <th style="width: 118.2px;">Luaran Penelitian dan PKM</th>
+                                 <th style="width: 82.2px;">Tahun</th>
                                  <th style="width: 63.2px;">Keterangan</th>
                                  <th style="width: 40.2px;">Edit </th>
                                  <th style="width: 40.2px;">Delete </th>
@@ -66,6 +68,8 @@
                                          <p class="text-break"><?php echo $data["keterangan"]; ?></p>
 
                                      </td>
+
+
                                      <td>
 
                                          <p class="text-break">Edit</p>
