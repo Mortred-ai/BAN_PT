@@ -176,6 +176,8 @@ $query = mysqli_query($db, "SELECT * FROM tbl_akred_prodi");
 								require "tbl_penelitian_mhs_paten.php";
 							} else if ($page == "tbl_penelitian_mhs_hki") {
 								require "tbl_penelitian_mhs_hki.php";
+							} else if ($page == "tbl_penelitian_mhs_ttg") {
+								require "tbl_penelitian_mhs_ttg.php";
 							}
 
 
@@ -267,6 +269,7 @@ $query = mysqli_query($db, "SELECT * FROM tbl_akred_prodi");
 									<li class="drawer-menu-item"><a href="?p=tbl_publikasi_mhs">Publikasi Ilmiah Mahasiswa</a></li>
 									<li class="drawer-menu-item mb-4"><a href="?p=tbl_penelitian_mhs_paten">Penelitian Mahasiswa - HKI (Paten, Paten Sederhana)</a></li>
 									<li class="drawer-menu-item mb-4"><a href="?p=tbl_penelitian_mhs_hki">Penelitian Mahasiswa - HKI (Hak Cipta, dll)</a></li>
+									<li class="drawer-menu-item mb-4"><a href="?p=tbl_penelitian_mhs_ttg">Penelitian Mahasiswa Teknologi Tepat Guna, dll</a></li>
 								</ul>
 							</li>
 						</ul>

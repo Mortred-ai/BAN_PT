@@ -2,7 +2,7 @@
      <div class="card-body">
          <div class="row">
              <div class="col-sm-10 mt-2">
-                 <h2>Data Tabel Luaran Penelitian yang Dihasilkan Mahasiswa - HKI (Hak Cipta, Desain Produk Industri, dll.)
+                 <h2>Data Tabel Luaran Penelitian yang Dihasilkan Mahasiswa -Teknologi Tepat Guna, Produk, Karya Seni, Rekayasa Sosial
                  </h2>
              </div>
              <div class="col-sm-2 mt-2">
@@ -16,7 +16,7 @@
 
     include "../config/database.php";
 
-    $query = mysqli_query($db, "SELECT * FROM tbl_pen_pkm_mhs_hakcipta");
+    $query = mysqli_query($db, "SELECT * FROM tbl_pen_pkm_mhs_teknocepat");
     ?>
 
  <div class="card">
