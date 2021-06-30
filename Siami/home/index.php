@@ -178,6 +178,8 @@ $query = mysqli_query($db, "SELECT * FROM tbl_akred_prodi");
 								require "tbl_penelitian_mhs_hki.php";
 							} else if ($page == "tbl_penelitian_mhs_ttg") {
 								require "tbl_penelitian_mhs_ttg.php";
+							} else if ($page == "tbl_penelitian_mhs_isbn") {
+								require "tbl_penelitian_mhs_isbn.php";
 							}
 
 
@@ -270,6 +272,7 @@ $query = mysqli_query($db, "SELECT * FROM tbl_akred_prodi");
 									<li class="drawer-menu-item mb-4"><a href="?p=tbl_penelitian_mhs_paten">Penelitian Mahasiswa - HKI (Paten, Paten Sederhana)</a></li>
 									<li class="drawer-menu-item mb-4"><a href="?p=tbl_penelitian_mhs_hki">Penelitian Mahasiswa - HKI (Hak Cipta, dll)</a></li>
 									<li class="drawer-menu-item mb-4"><a href="?p=tbl_penelitian_mhs_ttg">Penelitian Mahasiswa Teknologi Tepat Guna, dll</a></li>
+									<li class="drawer-menu-item mb-4"><a href="?p=tbl_penelitian_mhs_isbn">Penelitian Mahasiswa Buku ber-ISBN, Book Chapter</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -361,10 +364,18 @@ $query = mysqli_query($db, "SELECT * FROM tbl_akred_prodi");
 		})()
 	</script>
 
+	<script>
+		$('#exampleModal').on('shown.bs.modal', function() {
+			$('#myInput').trigger('focus')
+		})
+	</script>
+
 	<script src="assets/vendor/morris.min.js"></script>
 	<script src="assets/vendor/raphael.min.js"></script>
 	<script src="assets/vendor/bootstrap-datepicker.min.js"></script>
 	<script src="assets/js/datepicker.js"></script>
 </body>
+
+
 
 </html>
