@@ -37,23 +37,27 @@
                  <div class="col-sm-12">
                      <table style="width: 100%;" id="example" class="table table-hover table-striped table-bordered dataTable dtr-inline" role="grid" aria-describedby="example_info">
                          <thead>
-                             <tr role="row">
-                                 <th style="width: 118.2px;">Semester </th>
-                                 <th style="width: 82.2px;">Kode Mata Kuliah </th>
-                                 <th style="width: 63.2px;">Nama Mata Kuliah</th>
-                                 <th style="width: 63.2px;">Mata Kuliah Kompetensi</th>
+                             <tr role="row ">
+                                 <th rowspan="2" style="width: 118.2px;">Semester </th>
+                                 <th rowspan="2" style="width: 82.2px;">Kode Mata Kuliah </th>
+                                 <th rowspan="2" style="width: 63.2px;">Nama Mata Kuliah</th>
+                                 <th rowspan="2" style="width: 63.2px;">Mata Kuliah Kompetensi</th>
+                                 <th class="text-center" colspan="3" style="width: 63.2px;">Bobot Kredit (sks)</th>
+                                 <th rowspan="2" style="width: 63.2px;">Konversi Kredit ke Jam</th>
+                                 <th class="text-center" colspan="4" style="width: 63.2px;">Capaian Pembelajaran</th>
+                                 <th rowspan="2" style="width: 63.2px;">Dokumen Rencana Pembelajaran</th>
+                                 <th rowspan="2" style="width: 63.2px;">Unit Penyelenggara</th>
+                                 <th rowspan="2" style="width: 40.2px;">Edit </th>
+                                 <th rowspan="2" style="width: 40.2px;">Delete </th>
+                             </tr>
+                             <tr>
                                  <th style="width: 63.2px;">Kuliah/ Responsi/ Tutorial</th>
                                  <th style="width: 82.2px;">Seminar </th>
                                  <th style="width: 63.2px;">Praktikum/ Praktik/ Praktik Lapangan</th>
-                                 <th style="width: 63.2px;">Konversi Kredit ke Jam</th>
-                                 <th style="width: 63.2px;">Sikap</th>
-                                 <th style="width: 63.2px;">Pengetahuan</th>
-                                 <th style="width: 63.2px;">Keterampilan Umum</th>
-                                 <th style="width: 63.2px;">Keterampilan Khusus</th>
-                                 <th style="width: 63.2px;">Dokumen Rencana Pembelajaran</th>
-                                 <th style="width: 63.2px;">Unit Penyelenggara</th>
-                                 <th style="width: 40.2px;">Edit </th>
-                                 <th style="width: 40.2px;">Delete </th>
+                                 <th rowspan="2" style="width: 63.2px;">Sikap</th>
+                                 <th rowspan="2" style="width: 63.2px;">Pengetahuan</th>
+                                 <th rowspan="2" style="width: 63.2px;">Keterampilan Umum</th>
+                                 <th rowspan="2" style="width: 63.2px;">Keterampilan Khusus</th>
                              </tr>
                          </thead>
                          <tbody>
