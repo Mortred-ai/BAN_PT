@@ -21,7 +21,7 @@
 <?php
 include "../config/database.php";
 
-$query = mysqli_query($db, "SELECT * FROM tbl_kerjasama_pendidikan");
+$query = mysqli_query($db, "SELECT * FROM tbl_kerjasama_pendidikan ORDER BY id_kerj_pend DESC");
 
 
 ?>
@@ -99,13 +99,11 @@ $query = mysqli_query($db, "SELECT * FROM tbl_kerjasama_pendidikan");
 										<p class="text-break"><?php echo $data["tahun_berakhir"]; ?></p>
 
 									</td>
-									<td>
-
-										<p class="text-break">Edit</p>
+									<td> 
+										<a href="" class="text-break"><i style="font-size:1em;" class=" justify-content-center fas fa-edit d-flex"></i></a>
 									</td>
-									<td>
-
-										<p class="text-break">Delete</p>
+									<td> 
+										<a href="" class="text-break"><i style="font-size:1em;" class=" justify-content-center fas fa-trash d-flex"></i></a>
 									</td>
 								</tr>
 

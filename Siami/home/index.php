@@ -23,6 +23,7 @@ $query = mysqli_query($db, "SELECT * FROM tbl_akred_prodi");
 
 	<!-- Simplebar -->
 	<link type="text/css" href="assets/vendor/simplebar.css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
