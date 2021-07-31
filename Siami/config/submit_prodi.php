@@ -3,7 +3,6 @@
 require "database.php";
 
 include_once 'database.php';
-
 	 $prodi 		= $_POST['prodi'];
 	 $jenis 		= $_POST['jenis'];
 	 $peringkat 	= $_POST['peringkat'];

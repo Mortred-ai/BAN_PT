@@ -104,7 +104,10 @@ $query = mysqli_query($db, "SELECT * FROM tbl_akred_prodi");
 							$page = $_GET['p'];
 							if ($page == 'dashboard') {
 								require "dashboard.php";
-							} else if ($page == "menu_utama") {
+							} 
+							
+							// Table page
+							else if ($page == "menu_utama") {
 								require "menu_utama.php";
 							} else if ($page == "tbl_pendidikan") {
 								require "tbl_pendidikan.php";
@@ -181,7 +184,11 @@ $query = mysqli_query($db, "SELECT * FROM tbl_akred_prodi");
 							} else if ($page == "tbl_penelitian_mhs_isbn") {
 								require "tbl_penelitian_mhs_isbn.php";
 							}
-
+							
+							// insert page 
+							else if ($page == "insert_pendidikan") {
+								require "insert/insert_pendidikan.php";
+							}
 
 							// else
 							else {
@@ -272,7 +279,7 @@ $query = mysqli_query($db, "SELECT * FROM tbl_akred_prodi");
 									<li class="drawer-menu-item mb-4"><a href="?p=tbl_penelitian_mhs_paten">Penelitian Mahasiswa - HKI (Paten, Paten Sederhana)</a></li>
 									<li class="drawer-menu-item mb-4"><a href="?p=tbl_penelitian_mhs_hki">Penelitian Mahasiswa - HKI (Hak Cipta, dll)</a></li>
 									<li class="drawer-menu-item mb-4"><a href="?p=tbl_penelitian_mhs_ttg">Penelitian Mahasiswa Teknologi Tepat Guna, dll</a></li>
-									<li class="drawer-menu-item mb-4"><a href="?p=tbl_penelitian_mhs_isbn">Penelitian Mahasiswa Buku ber-ISBN, Book Chapter</a></li>
+									<li class="drawer-menu-item mb-3"><a href="?p=tbl_penelitian_mhs_isbn">Penelitian Mahasiswa Buku ber-ISBN, Book Chapter</a></li>
 								</ul>
 							</li>
 						</ul>
