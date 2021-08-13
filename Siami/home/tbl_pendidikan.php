@@ -106,7 +106,7 @@ $query = mysqli_query($db, "SELECT * FROM tbl_kerjasama_pendidikan ORDER BY id_k
 										</a>
 									</td>
 									<td> 
-										<a href="delete_kerjasama_pendidikan.php?id=<?php echo $data['id_kerj_pend']; ?> " class="text-break">
+									<a href='delete.php?id_mahasiswa=$row[id_mahasiswa]'>
 											<i style="font-size:1em;" class=" justify-content-center fas fa-trash d-flex"></i>
 										</a>
 									</td>
