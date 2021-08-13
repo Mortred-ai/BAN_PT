@@ -57,6 +57,7 @@ $query = mysqli_query($db, "SELECT * FROM tbl_kerjasama_pendidikan ORDER BY id_k
 								<th style="width: 40.2px;">Delete </th>
 							</tr>
 						</thead>
+
 						<tbody>
 
 							<?php
@@ -100,10 +101,14 @@ $query = mysqli_query($db, "SELECT * FROM tbl_kerjasama_pendidikan ORDER BY id_k
 
 									</td>
 									<td> 
-										<a href="" class="text-break"><i style="font-size:1em;" class=" justify-content-center fas fa-edit d-flex"></i></a>
+										<a href="" class="text-break">
+											<i style="font-size:1em;" class=" justify-content-center fas fa-edit d-flex"></i>
+										</a>
 									</td>
 									<td> 
-										<a href="" class="text-break"><i style="font-size:1em;" class=" justify-content-center fas fa-trash d-flex"></i></a>
+										<a href="delete_kerjasama_pendidikan.php?id=<?php echo $data['id_kerj_pend']; ?> " class="text-break">
+											<i style="font-size:1em;" class=" justify-content-center fas fa-trash d-flex"></i>
+										</a>
 									</td>
 								</tr>
 
