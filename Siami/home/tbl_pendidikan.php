@@ -129,13 +129,15 @@ $query = mysqli_query($db, "SELECT * FROM tbl_kerjasama_pendidikan ORDER BY id_k
 </div>
 
 
-<?php 
-if(isset($_GET['id'])){
-mysqli_query($data, "delete from tbl_kerjasama_pendidikan where id_kerj_pend='$_GET[id]'");
+<?php  
+
+$id = $_GET['id'];
+ 
+// Delete user row from table based on given id
+$result = mysqli_query($mysqli, "DELETE FROM users WHERE id=$id");
 
 echo "data telah terhapus";
-echo "<meta http-equev=refresh content=2; URL='tbl_pendidikan.php'>";
-}
+echo "<meta http-equev=refresh content=2; URL='tbl_pendidikan.php'>"; 
 
 ?>
 
