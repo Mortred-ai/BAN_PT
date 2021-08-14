@@ -106,7 +106,7 @@ $query = mysqli_query($db, "SELECT * FROM tbl_kerjasama_pendidikan ORDER BY id_k
 										</a>
 									</td>
 									<td> 
-									<a href='delete.php?id_mahasiswa=$row[id_mahasiswa]'>
+									<a href='?id=$row[id_kerj_pend]'>
 											<i style="font-size:1em;" class=" justify-content-center fas fa-trash d-flex"></i>
 										</a>
 									</td>
@@ -127,6 +127,17 @@ $query = mysqli_query($db, "SELECT * FROM tbl_kerjasama_pendidikan ORDER BY id_k
 		</div>
 	</div>
 </div>
+
+
+<?php 
+if(isset($_GET['id'])){
+mysqli_query($data, "delete from tbl_kerjasama_pendidikan where id_kerj_pend='$_GET[id]'");
+
+echo "data telah terhapus";
+echo "<meta http-equev=refresh content=2; URL='tbl_pendidikan.php'>";
+}
+
+?>
 
 <!-- Optional JavaScript; choose one of the two! -->
 
