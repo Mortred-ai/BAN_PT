@@ -12,8 +12,7 @@ Enter and \t Tab ("it's a Heredoc data echoes"); \n
 script;
 echo APP_VERSION; echo "\n";  
 
-function getFinalValue(int $id, $filter): string{
-    $finalName = $filter($id);
-    $theFunctionThatGetCalled(); 
+function getFinalValue(int $id, $filter): string{ 
+    
 } 
 ?>
