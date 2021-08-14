@@ -8,12 +8,12 @@ echo "Text echo with \t Tab function\n"; var_dump(9223372036854775888); var_dump
 
 echo <<<'script'
 Text echoes with  double space
-Enter and \t Tab
-("it's a Heredoc data echoes"); \n
+Enter and \t Tab ("it's a Heredoc data echoes"); \n
 script;
 echo APP_VERSION; echo "\n";  
 
-function getFinalValue(int $id, $filter){
+function getFinalValue(int $id, $filter): string{
     $finalName = $filter($id);
-    $theFunctionThatGetCalled();
-}
+    $theFunctionThatGetCalled(); 
+} 
+?>
