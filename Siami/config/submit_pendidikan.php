@@ -16,7 +16,6 @@ $sql =  "INSERT INTO tbl_kerjasama_pendidikan
     VALUES
     ('$lembaga','$tingkat','$judul','$manfaat','$waktu','bukti','$berakhir')";
 
-
 if (mysqli_query($db, $sql)) {
     echo "New record created successfully !"; 
 header('Location:../home/?p=tbl_pendidikan');

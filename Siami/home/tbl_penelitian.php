@@ -5,7 +5,7 @@
 				<h2>Data Tabel Penelitian</h2>
 			</div>
 			<div class="col-sm-2 mt-2">
-				<button class="btn btn-primary">Tambah Data</button>
+				<a href="?p=insert_penelitian"><button class="btn btn-primary">Tambah Data</button></a>
 			</div>
 		</div>
 	</div>

@@ -106,7 +106,7 @@ $query = mysqli_query($db, "SELECT * FROM tbl_kerjasama_pendidikan ORDER BY id_k
 										</a>
 									</td>
 									<td> 
-									<a href='?id=$row[id_kerj_pend]'>
+									<a href='?id_pend=$row[id_kerj_pend]'>
 											<i style="font-size:1em;" class=" justify-content-center fas fa-trash d-flex"></i>
 										</a>
 									</td>
@@ -131,10 +131,10 @@ $query = mysqli_query($db, "SELECT * FROM tbl_kerjasama_pendidikan ORDER BY id_k
 
 <?php  
 
-$id = $_GET['id'];
+$id_pend = $_GET['id_kerj_pend'];
  
 // Delete user row from table based on given id
-$result = mysqli_query($mysqli, "DELETE FROM users WHERE id=$id");
+$result = mysqli_query($db, "DELETE FROM users WHERE id=$id_pend");
 
 echo "data telah terhapus";
 echo "<meta http-equev=refresh content=2; URL='tbl_pendidikan.php'>"; 
@@ -146,6 +146,14 @@ echo "<meta http-equev=refresh content=2; URL='tbl_pendidikan.php'>";
 <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+<script>
+	$(document).ready(function(){
+		$(".text-left").click(function(){
+			$("h2").hide();
+		});
+	});
+</script>
 
 <!-- Option 2: Separate Popper and Bootstrap JS -->
 <!--

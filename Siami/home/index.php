@@ -189,6 +189,8 @@ $query = mysqli_query($db, "SELECT * FROM tbl_akred_prodi");
 							// insert page 
 							else if ($page == "insert_pendidikan") {
 								require "insert/insert_pendidikan.php";
+							} else if ($page == "insert_penelitian"){
+								require "insert/insert_penelitian.php";
 							}
 
 							// else
