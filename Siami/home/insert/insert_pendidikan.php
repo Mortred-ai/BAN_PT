@@ -12,8 +12,7 @@
 			</div>
 		</div>
 	</div>
-</div>
-
+</div> 
 
 <div class="card text-left">
 	<h4 class="card-body">
